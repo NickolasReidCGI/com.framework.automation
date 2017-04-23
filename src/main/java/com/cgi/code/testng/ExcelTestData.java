@@ -4,10 +4,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.AssertJUnit;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -26,11 +22,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 import com.cgi.code.xml.IXMLParam;
 import com.cgi.code.xml.TestAccess;
@@ -50,8 +42,6 @@ public class ExcelTestData {
 	private Map<String, List<ExcelTestParams>> testCaseMap;
 	private Map<String, List<ExcelTestParams>> functionMap;
 	private String propFileName = "temp/tempVariables.properties";
-	private Properties prop = new Properties();
-	
 	// Constructor is private because it is only for local use
 	private ExcelTestData() {
 	}
@@ -77,6 +67,7 @@ public class ExcelTestData {
 	/**
 	 * Setup before TestNG cases are run.
 	 */
+	@SuppressWarnings("deprecation")
 	@BeforeClass
 	public void BeforeClass() {
 		DOMConfigurator.configure(System.getProperty("user.dir") + "//XML//log4j.xml");

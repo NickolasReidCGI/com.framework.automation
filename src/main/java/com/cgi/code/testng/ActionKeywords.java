@@ -749,7 +749,6 @@ public abstract class ActionKeywords {
 	
 	//Set temporary stored property
 	public void setValueIn(ActionParams actionParams){
-		WebDriver driver = actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
@@ -774,7 +773,7 @@ public abstract class ActionKeywords {
 	
 	//Set temporary dollar value
 	public void setDollarValueIn(ActionParams actionParams){
-		WebDriver driver = actionParams.getDriver();
+		actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
