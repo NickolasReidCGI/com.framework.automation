@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--Last Updated : 
+# Master Object Repository for ALC Testing-->
+
+<CGI>
+	<ALC>
+		<Playsphere>
+			<Genesis>
+				<Regression>
+					<DataSet name = "">
+						<Jscript></Jscript>
+						<class></class >
+						<className></className >
+						<css ></css >
+						<cssSelector ></cssSelector> 
+						<id>
+							<item name = "email">ap_email</item>		
+							<item name = "password">ap_password</item>	
+							<item name = "submit">signInSubmit</item>	
+							
+						</id> 
+						<link ></link> 
+						<linkText ></linkText> 
+						<name></name>
+						<partialLinkText ></partialLinkText> 
+						<tag ></tag> 
+						<tagName ></tagName>
+						<xpath>
+						<item name = "signinbutton">//*[@id="nav-link-yourAccount"]/span[1]</item>
+						<item name = "username">//*[@id="nav-link-yourAccount"]/span[1]</item>
+					
+						</xpath>
+</DataSet>
+				</Regression>
+			</Genesis>	
+		</Playsphere>
+	</ALC>
+</CGI>
