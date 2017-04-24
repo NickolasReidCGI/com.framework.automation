@@ -936,4 +936,18 @@ public abstract class ActionKeywords {
 		}
 		return imageFileName;
 	}
+	
+	/*
+	 *  TEST CODE
+	 */
+	public String DropDown(ActionParams actionParams){
+		ExtentTest extentTest = actionParams.getExtentTest();
+		WebDriver driver = actionParams.getDriver();
+		logger.info("Selecting Dropdown - ");
+		Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='landingTerm']")));
+		dropdown.selectByIndex(3);
+		System.out.println("DROP DOWN IS ACTIVATED");
+		return "";
+	}
+	
 }

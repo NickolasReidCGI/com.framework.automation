@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Test-method Suite]" parallel="methods">
-  <test name="Test-method test(failed)" parallel="methods">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.cgi.code.testng.ExcelTestData">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- com.cgi.code.testng.ExcelTestData -->
     </classes>
-  </test> <!-- Test-method test(failed) -->
-</suite> <!-- Failed suite [Test-method Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -136,3 +136,202 @@
 2017-04-23 17:01:36,943 INFO  [ActionKeywords] Closing the browser 
 2017-04-23 17:01:39,189 ERROR [ActionKeywords] Not able to Close the Browser --- WebDriverException 
 2017-04-23 17:01:39,423 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-23 17:03:30,880 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:03:30,880 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:03:30,880 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 login into on Amazon.ca       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 17:03:30,880 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:03:30,880 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:03:30,942 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 17:03:33,812 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 17:03:35,009 INFO  [ActionKeywords] Navigating to URL - https://amazon.ca/ 
+2017-04-23 17:03:40,697 INFO  [ActionKeywords] Verify title displayed is Amazon.ca 
+2017-04-23 17:03:40,704 ERROR [ActionKeywords] Failed to verify title. Error Message  - NoSuchWindowException 
+2017-04-23 17:03:40,704 INFO  [ActionKeywords] Closing the browser 
+2017-04-23 17:03:42,732 ERROR [ActionKeywords] Not able to Close the Browser --- WebDriverException 
+2017-04-23 17:03:42,982 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-23 17:14:08,571 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:14:08,571 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:14:08,571 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 login into on Amazon.ca       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 17:14:08,571 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:14:08,571 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:14:08,633 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 17:14:11,568 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 17:14:12,772 INFO  [ActionKeywords] Navigating to URL - https://amazon.ca/ 
+2017-04-23 17:14:19,170 INFO  [ActionKeywords] Verify title displayed is Amazon.ca 
+2017-04-23 17:14:19,184 ERROR [ActionKeywords] Failed to verify title. Error Message  - NoSuchWindowException 
+2017-04-23 17:14:19,184 INFO  [ActionKeywords] Closing the browser 
+2017-04-23 17:14:21,243 ERROR [ActionKeywords] Not able to Close the Browser --- WebDriverException 
+2017-04-23 17:14:21,540 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-23 17:15:33,481 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:15:33,481 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:15:33,481 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 login into on Amazon.ca       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 17:15:33,481 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:15:33,481 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:15:33,574 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 17:15:36,510 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 17:15:37,747 INFO  [ActionKeywords] Navigating to URL - https://amazon.ca/ 
+2017-04-23 17:15:43,636 INFO  [ActionKeywords] Verify title displayed is Amazon.ca 
+2017-04-23 17:15:43,679 INFO  [ActionKeywords] Amazon.ca message is displayed 
+2017-04-23 17:15:46,080 INFO  [ActionKeywords] Clicking on Webelement signinbutton 
+2017-04-23 17:15:47,496 INFO  [ActionKeywords] Entering the text in email 
+2017-04-23 17:15:47,808 INFO  [ActionKeywords] Entering the text in password 
+2017-04-23 17:15:50,075 INFO  [ActionKeywords] Clicking on Webelement submit 
+2017-04-23 17:15:54,210 ERROR [ActionKeywords] Not able to click --- WebDriverException 
+2017-04-23 17:15:54,210 INFO  [ActionKeywords] Closing the browser 
+2017-04-23 17:15:54,428 ERROR [ActionKeywords] Not able to Close the Browser --- WebDriverException 
+2017-04-23 17:15:54,694 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-23 17:21:27,981 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:21:27,981 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:21:27,981 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 login into on Amazon.ca       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 17:21:27,981 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:21:27,981 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:21:28,075 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 17:21:31,057 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 17:21:32,283 INFO  [ActionKeywords] Navigating to URL - https://amazon.ca/ 
+2017-04-23 17:21:38,397 INFO  [ActionKeywords] Verify title displayed is Amazon.ca 
+2017-04-23 17:21:38,415 INFO  [ActionKeywords] Amazon.ca message is displayed 
+2017-04-23 17:22:09,905 INFO  [ActionKeywords] Clicking on Webelement signinbutton 
+2017-04-23 17:22:11,325 INFO  [ActionKeywords] Entering the text in email 
+2017-04-23 17:22:11,574 INFO  [ActionKeywords] Entering the text in password 
+2017-04-23 17:22:11,768 INFO  [ActionKeywords] Clicking on Webelement submit 
+2017-04-23 17:22:18,406 INFO  [ActionKeywords] Verify text displayed on username is Selenium 
+2017-04-23 17:22:18,606 INFO  [ActionKeywords] Selenium message is displayed 
+2017-04-23 17:22:49,270 INFO  [ActionKeywords] Closing the browser 
+2017-04-23 17:22:50,878 ERROR [ExcelTestData] java.io.FileNotFoundException: temp\tempVariables.properties (The system cannot find the path specified) 
+2017-04-23 17:26:07,666 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:26:07,666 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:26:07,666 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 login into on Amazon.ca       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 17:26:07,666 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:26:07,666 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:26:07,744 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 17:26:11,081 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 17:26:12,278 INFO  [ActionKeywords] Navigating to URL - https://amazon.ca/ 
+2017-04-23 17:26:16,399 INFO  [ActionKeywords] Verify title displayed is Amazon.ca 
+2017-04-23 17:26:16,408 ERROR [ActionKeywords] Failed to verify title. Error Message  - NoSuchWindowException 
+2017-04-23 17:26:16,408 INFO  [ActionKeywords] Closing the browser 
+2017-04-23 17:26:18,452 ERROR [ActionKeywords] Not able to Close the Browser --- WebDriverException 
+2017-04-23 17:26:18,701 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-23 17:30:57,419 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:30:57,419 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:30:57,419 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 login into on Amazon.ca       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 17:30:57,419 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:30:57,419 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:30:57,513 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 17:31:00,480 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 17:31:01,717 INFO  [ActionKeywords] Navigating to URL - https://amazon.ca/ 
+2017-04-23 17:31:07,454 INFO  [ActionKeywords] Verify title displayed is Amazon.ca 
+2017-04-23 17:31:07,498 INFO  [ActionKeywords] Amazon.ca message is displayed 
+2017-04-23 17:31:11,689 INFO  [ActionKeywords] Clicking on Webelement signinbutton 
+2017-04-23 17:31:12,879 INFO  [ActionKeywords] Entering the text in email 
+2017-04-23 17:31:13,177 INFO  [ActionKeywords] Entering the text in password 
+2017-04-23 17:31:13,358 INFO  [ActionKeywords] Clicking on Webelement submit 
+2017-04-23 17:31:19,306 INFO  [ActionKeywords] Verify text displayed on username is Selenium 
+2017-04-23 17:31:19,410 INFO  [ActionKeywords] Selenium message is displayed 
+2017-04-23 17:31:20,627 INFO  [ActionKeywords] Closing the browser 
+2017-04-23 17:31:24,016 ERROR [ExcelTestData] java.io.FileNotFoundException: temp\tempVariables.properties (The system cannot find the path specified) 
+2017-04-23 17:32:24,421 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:32:24,421 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:32:24,421 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 login into on Amazon.ca       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 17:32:24,421 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:32:24,421 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:32:24,483 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 17:32:27,366 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 17:32:28,562 INFO  [ActionKeywords] Navigating to URL - https://amazon.ca/ 
+2017-04-23 17:32:33,864 INFO  [ActionKeywords] Verify title displayed is Amazon.ca 
+2017-04-23 17:32:33,887 INFO  [ActionKeywords] Amazon.ca message is displayed 
+2017-04-23 17:32:36,212 INFO  [ActionKeywords] Clicking on Webelement signinbutton 
+2017-04-23 17:32:37,595 INFO  [ActionKeywords] Entering the text in email 
+2017-04-23 17:32:37,886 INFO  [ActionKeywords] Entering the text in password 
+2017-04-23 17:32:38,055 INFO  [ActionKeywords] Clicking on Webelement submit 
+2017-04-23 17:32:38,416 INFO  [ActionKeywords] Verify text displayed on username is Selenium 
+2017-04-23 17:32:38,422 ERROR [ActionKeywords] Failed to verify username . Error Message  - NoSuchWindowException 
+2017-04-23 17:32:38,422 INFO  [ActionKeywords] Closing the browser 
+2017-04-23 17:32:40,482 ERROR [ActionKeywords] Not able to Close the Browser --- WebDriverException 
+2017-04-23 17:32:40,763 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-23 17:51:54,503 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:51:54,503 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:51:54,503 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 17:51:54,503 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:51:54,503 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 17:51:54,612 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 17:51:57,716 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 17:51:58,896 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-23 17:52:03,008 INFO  [ActionKeywords] Closing the browser 
+2017-04-23 17:52:06,117 ERROR [ExcelTestData] java.io.FileNotFoundException: temp\tempVariables.properties (The system cannot find the path specified) 
+2017-04-23 20:09:49,136 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 20:09:49,136 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 20:09:49,136 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 20:09:49,136 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 20:09:49,136 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 20:09:49,229 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 20:09:52,201 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 20:09:53,410 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-23 20:09:59,213 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-23 20:11:49,901 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 20:11:49,901 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 20:11:49,901 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 20:11:49,901 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 20:11:49,901 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 20:11:49,995 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 20:11:52,895 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 20:11:53,996 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-23 20:11:59,010 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-23 21:23:18,498 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:23:18,498 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:23:18,498 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 21:23:18,498 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:23:18,498 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:23:18,560 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 21:23:21,490 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 21:23:22,734 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-23 21:23:28,010 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-23 21:23:59,335 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:23:59,335 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:23:59,335 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 21:23:59,335 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:23:59,335 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:23:59,382 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 21:24:02,309 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 21:24:03,531 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-23 21:24:08,615 ERROR [ExcelTestData] java.io.FileNotFoundException: temp\tempVariables.properties (The system cannot find the path specified) 
+2017-04-23 21:24:08,954 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-23 21:25:03,054 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:25:03,054 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:25:03,054 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 21:25:03,054 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:25:03,054 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:25:03,132 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 21:25:06,113 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 21:25:07,324 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-23 21:25:13,300 ERROR [ExcelTestData] java.io.FileNotFoundException: temp\tempVariables.properties (The system cannot find the path specified) 
+2017-04-23 21:25:13,624 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-23 21:28:06,441 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:28:06,441 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:28:06,441 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 21:28:06,441 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:28:06,441 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:28:06,550 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 21:28:09,565 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 21:28:10,775 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-23 21:28:15,184 ERROR [ExcelTestData] java.io.FileNotFoundException: temp\tempVariables.properties (The system cannot find the path specified) 
+2017-04-23 21:28:15,554 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-23 21:29:09,277 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:29:09,277 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:29:09,277 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 21:29:09,277 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:29:09,277 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:29:09,355 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 21:29:12,264 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 21:29:13,503 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-23 21:29:18,346 ERROR [ExcelTestData] java.io.FileNotFoundException: temp\tempVariables.properties (The system cannot find the path specified) 
+2017-04-23 21:29:18,641 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-23 21:31:46,976 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:31:46,976 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:31:46,976 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-23 21:31:46,976 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:31:46,976 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-23 21:31:47,038 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-23 21:31:50,133 INFO  [ActionKeywords] Chrome browser started 
+2017-04-23 21:31:51,341 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-23 21:31:55,812 ERROR [ExcelTestData] java.io.FileNotFoundException: temp\tempVariables.properties (The system cannot find the path specified) 
+2017-04-23 21:31:56,119 INFO  [ExcelTestData] Disposing WebDriver 
