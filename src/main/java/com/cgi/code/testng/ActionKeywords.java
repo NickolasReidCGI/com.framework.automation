@@ -16,6 +16,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -940,13 +941,38 @@ public abstract class ActionKeywords {
 	/*
 	 *  TEST CODE
 	 */
-	public String DropDown(ActionParams actionParams){
+	public void DropDown(ActionParams actionParams){
 		ExtentTest extentTest = actionParams.getExtentTest();
 		WebDriver driver = actionParams.getDriver();
-		logger.info("Selecting Dropdown - ");
-		Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='landingTerm']")));
-		dropdown.selectByIndex(3);
-		System.out.println("DROP DOWN IS ACTIVATED");
+		try{
+
+		Select dropdown = new Select(driver.findElement(By.xpath(actionParams.getPageObject())));
+		//dropdown.selectByValue(actionParams.getData());
+		dropdown.selectByVisibleText(actionParams.getData());
+		WebElement we = dropdown.getFirstSelectedOption();
+		System.out.println("DROP DOWN IS ACTIVATED"); 
+		
+	
+			logger.info(actionParams.getData() + " is " + we.getText());
+			extentTest.log(LogStatus.PASS, "Validated " + we.getText() +" value on" + actionParams.getPageObject()
+				+" is "	+ we.getText() + extentTest.addScreenCapture(CreateScreenshot(driver)));
+		} catch(Exception e) {
+			logger.error(actionParams.getData() + " is not correct value");
+			extentTest.log(LogStatus.FAIL, "Validated " +actionParams.getData() +" value on" + actionParams.getPageObject()
+					+" is "+ actionParams.getData() + extentTest.addScreenCapture(CreateScreenshot(driver)));
+		}
+
+	}
+	
+	public String SwitchTab(ActionParams actionParams){
+		WebDriver driver = actionParams.getDriver();
+        String currentWindow = driver.getWindowHandle();
+        
+        for (String handle : driver.getWindowHandles()) {
+       	    if (!handle.equals(currentWindow)) {
+       	        driver.switchTo().window(handle);
+       	    }
+       	}
 		return "";
 	}
 	
