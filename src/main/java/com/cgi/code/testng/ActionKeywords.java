@@ -172,7 +172,7 @@ public abstract class ActionKeywords {
 			logger.info("Clicking on Webelement " + actionParams.getPageObject());
 			//wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(GetLocator(pageObject, testCaseXMLData)))).click();
 			//driver.findElement(GetLocator(pageObject, testCaseXMLData)).click();
-			driver.findElement(GetLocator(pageObject, testCaseXMLData)).click();
+			driver.findElement(By.xpath(pageObject)).click();
 			extentTest.log(LogStatus.PASS, "Clicked on " + pageObject);
 		} catch (Exception e) {
 			logger.error("Not able to click --- " + e.getClass().getSimpleName());
@@ -292,8 +292,14 @@ public abstract class ActionKeywords {
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
 			logger.info("Entering the text in " + actionParams.getPageObject());
+			driver.findElement(By.xpath(pageObject)).clear();
+			driver.findElement(By.xpath(pageObject)).click();
+			driver.findElement(By.xpath(pageObject)).sendKeys(data);
+			
+			/* OLD CODE
 			driver.findElement(GetLocator(pageObject, testCaseXMLData)).click();
 			driver.findElement(GetLocator(pageObject, testCaseXMLData)).sendKeys(data);
+			*/
 			extentTest.log(LogStatus.PASS, "Entered text " + data + "  on " + pageObject);
 		} catch (Exception e) {
 			logger.error("Not able to Enter text in " + pageObject + " . Error Message  - " + 
@@ -428,8 +434,7 @@ public abstract class ActionKeywords {
 		try {
 			logger.info("Clicking on Webelement " + pageObject);
 			WebDriverWait wait = new WebDriverWait(driver, Integer.parseInt(data));
-			wait.until(ExpectedConditions.elementToBeClickable(GetLocator(pageObject, 
-					testCaseXMLData)));
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath(pageObject)));
 			actionParams.getExtentTest().log(LogStatus.PASS, "Found element " + pageObject);
 		} catch (Exception e) {
 			logger.info("Unable to find element " + actionParams.getPageObject() + 
@@ -938,9 +943,7 @@ public abstract class ActionKeywords {
 		return imageFileName;
 	}
 	
-	/*
-	 *  TEST CODE
-	 */
+
 	public void DropDown(ActionParams actionParams){
 		ExtentTest extentTest = actionParams.getExtentTest();
 		WebDriver driver = actionParams.getDriver();
@@ -962,6 +965,14 @@ public abstract class ActionKeywords {
 					+" is "+ actionParams.getData() + extentTest.addScreenCapture(CreateScreenshot(driver)));
 		}
 
+	}
+	
+	public void ScreenShot(ActionParams actionParams){
+		ExtentTest extentTest = actionParams.getExtentTest();
+		WebDriver driver = actionParams.getDriver();
+		logger.info("Captured Result - Ending Test");
+		extentTest.log(LogStatus.PASS, "Validated  (test) "+ extentTest.addScreenCapture(CreateScreenshot(driver)));
+		
 	}
 	
 	public String SwitchTab(ActionParams actionParams){

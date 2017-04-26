@@ -1,48 +1,38 @@
-2017-04-25 14:34:48,728 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:34:48,728 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:34:48,728 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-04-25 14:34:48,729 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:34:48,729 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:34:48,811 INFO  [ActionKeywords] Opening Browser - Chrome 
-2017-04-25 14:34:53,715 INFO  [ActionKeywords] Chrome browser started 
-2017-04-25 14:34:54,930 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
-2017-04-25 14:35:01,884 INFO  [ActionKeywords] object:26 is 1 Year Open 4% 
-2017-04-25 14:35:02,078 INFO  [ActionKeywords] Navigating to URL - https://www.google.ca 
-2017-04-25 14:35:04,553 ERROR [ExcelTestData] java.util.ConcurrentModificationException 
-2017-04-25 14:35:04,820 INFO  [ExcelTestData] Disposing WebDriver 
-2017-04-25 14:35:15,945 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:35:15,946 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:35:15,946 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-04-25 14:35:15,946 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:35:15,946 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:35:16,029 INFO  [ActionKeywords] Opening Browser - Chrome 
-2017-04-25 14:35:21,041 INFO  [ActionKeywords] Chrome browser started 
-2017-04-25 14:35:22,227 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
-2017-04-25 14:35:28,756 INFO  [ActionKeywords] object:26 is 1 Year Open 4% 
-2017-04-25 14:35:28,952 INFO  [ActionKeywords] Navigating to URL - https://www.google.ca 
-2017-04-25 14:35:31,565 ERROR [ExcelTestData] java.util.ConcurrentModificationException 
-2017-04-25 14:35:31,808 INFO  [ExcelTestData] Disposing WebDriver 
-2017-04-25 14:48:02,006 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:48:02,007 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:48:02,007 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-04-25 14:48:02,007 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:48:02,007 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:48:02,077 INFO  [ActionKeywords] Opening Browser - Chrome 
-2017-04-25 14:48:08,157 INFO  [ActionKeywords] Chrome browser started 
-2017-04-25 14:48:09,331 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
-2017-04-25 14:48:16,583 INFO  [ActionKeywords] 4 Year Fixed Rate Mortgage 2.57% is 4 Year Fixed Rate Mortgage 2.57% 
-2017-04-25 14:48:16,819 INFO  [ActionKeywords] Navigating to URL - https://www.google.ca 
-2017-04-25 14:48:19,298 ERROR [ExcelTestData] java.util.ConcurrentModificationException 
-2017-04-25 14:48:19,585 INFO  [ExcelTestData] Disposing WebDriver 
-2017-04-25 14:49:43,344 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:49:43,345 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:49:43,345 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-04-25 14:49:43,345 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:49:43,345 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 14:49:43,414 INFO  [ActionKeywords] Opening Browser - Chrome 
-2017-04-25 14:49:49,325 INFO  [ActionKeywords] Chrome browser started 
-2017-04-25 14:49:50,488 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
-2017-04-25 14:49:55,974 INFO  [ActionKeywords] 1 Year Open 4% is 1 Year Open 4% 
-2017-04-25 14:49:56,176 INFO  [ActionKeywords] Navigating to URL - https://www.google.ca 
-2017-04-25 14:49:57,715 ERROR [ExcelTestData] java.util.ConcurrentModificationException 
-2017-04-25 14:49:58,002 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-25 21:44:47,765 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-25 21:44:47,780 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-25 21:44:47,780 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-25 21:44:47,780 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-25 21:44:47,780 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-25 21:44:47,858 FATAL [TestAccess] There was a problem reading the Object Mapping XML file UnmarshalException null 
+2017-04-25 21:44:47,858 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-25 21:44:50,866 INFO  [ActionKeywords] Chrome browser started 
+2017-04-25 21:44:52,075 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-25 21:44:56,104 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAmount'] 
+2017-04-25 21:44:56,839 INFO  [ActionKeywords] 1 Year Open 4% is 1 Year Open 4% 
+2017-04-25 21:44:57,526 INFO  [ActionKeywords] 22 years is 22 years 
+2017-04-25 21:44:57,866 INFO  [ActionKeywords] Bi-Weekly is Bi-Weekly 
+2017-04-25 21:44:57,988 INFO  [ActionKeywords] Entering the text in .//*[@id='borrower0'] 
+2017-04-25 21:44:58,261 INFO  [ActionKeywords] Clicking on Webelement //span[@class='td-label-check'] 
+2017-04-25 21:44:58,370 INFO  [ActionKeywords] Clicking on Webelement //button[@aria-label='Calculate my payments'] 
+2017-04-25 21:44:58,499 INFO  [ActionKeywords] Navigating to URL - https://www.google.ca 
+2017-04-25 21:45:00,355 ERROR [ExcelTestData] java.util.ConcurrentModificationException 
+2017-04-25 21:45:00,587 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-25 21:51:03,980 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-25 21:51:03,980 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-25 21:51:03,980 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-25 21:51:03,980 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-25 21:51:03,980 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-25 21:51:04,058 FATAL [TestAccess] There was a problem reading the Object Mapping XML file UnmarshalException null 
+2017-04-25 21:51:04,058 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-25 21:51:07,072 INFO  [ActionKeywords] Chrome browser started 
+2017-04-25 21:51:08,259 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-25 21:51:13,567 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAmount'] 
+2017-04-25 21:51:14,198 INFO  [ActionKeywords] 1 Year Open 4% is 1 Year Open 4% 
+2017-04-25 21:51:14,933 INFO  [ActionKeywords] 22 years is 22 years 
+2017-04-25 21:51:15,321 INFO  [ActionKeywords] Bi-Weekly is Bi-Weekly 
+2017-04-25 21:51:15,498 INFO  [ActionKeywords] Entering the text in .//*[@id='borrower0'] 
+2017-04-25 21:51:15,767 INFO  [ActionKeywords] Clicking on Webelement //span[@class='td-label-check'] 
+2017-04-25 21:51:15,855 INFO  [ActionKeywords] Clicking on Webelement //button[@aria-label='Calculate my payments'] 
+2017-04-25 21:51:15,998 INFO  [ActionKeywords] Captured Result - Ending Test 
+2017-04-25 21:51:17,693 ERROR [ExcelTestData] java.util.ConcurrentModificationException 
+2017-04-25 21:51:17,946 INFO  [ExcelTestData] Disposing WebDriver 

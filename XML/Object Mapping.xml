@@ -14,10 +14,6 @@
 						<css ></css >
 						<cssSelector ></cssSelector> 
 						<id>
-							<item name = "email">ap_email</item>		
-							<item name = "password">ap_password</item>	
-							<item name = "submit">signInSubmit</item>	
-							
 						</id> 
 						<link ></link> 
 						<linkText ></linkText> 
@@ -26,9 +22,12 @@
 						<tag ></tag> 
 						<tagName ></tagName>
 						<xpath>
-						<item name = "signinbutton">//*[@id="nav-link-yourAccount"]/span[1]</item>
-						<item name = "username">//*[@id="nav-link-yourAccount"]/span[1]</item>
-					
+						<item name = "landingAmount">.//*[@id='landingAmount']</item>
+						<item name = "lumpSum">//label[@for='showAdditionalPayYes']</item>
+						<item name = "lumpSumAmount">.//*[@id='landingAdditionalPayAmount']</item>
+						<item name = "EnterAge">.//*[@id='borrower0']</item>
+						<item name = "IllnessInsurance">//span[@class='td-label-check']</item>
+						<item name =submit">//button[@aria-label='Calculate my payments']</item>
 						</xpath>
 </DataSet>
 				</Regression>
