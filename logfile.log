@@ -1,38 +1,86 @@
-2017-04-25 21:44:47,765 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 21:44:47,780 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 21:44:47,780 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-04-25 21:44:47,780 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 21:44:47,780 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 21:44:47,858 FATAL [TestAccess] There was a problem reading the Object Mapping XML file UnmarshalException null 
-2017-04-25 21:44:47,858 INFO  [ActionKeywords] Opening Browser - Chrome 
-2017-04-25 21:44:50,866 INFO  [ActionKeywords] Chrome browser started 
-2017-04-25 21:44:52,075 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
-2017-04-25 21:44:56,104 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAmount'] 
-2017-04-25 21:44:56,839 INFO  [ActionKeywords] 1 Year Open 4% is 1 Year Open 4% 
-2017-04-25 21:44:57,526 INFO  [ActionKeywords] 22 years is 22 years 
-2017-04-25 21:44:57,866 INFO  [ActionKeywords] Bi-Weekly is Bi-Weekly 
-2017-04-25 21:44:57,988 INFO  [ActionKeywords] Entering the text in .//*[@id='borrower0'] 
-2017-04-25 21:44:58,261 INFO  [ActionKeywords] Clicking on Webelement //span[@class='td-label-check'] 
-2017-04-25 21:44:58,370 INFO  [ActionKeywords] Clicking on Webelement //button[@aria-label='Calculate my payments'] 
-2017-04-25 21:44:58,499 INFO  [ActionKeywords] Navigating to URL - https://www.google.ca 
-2017-04-25 21:45:00,355 ERROR [ExcelTestData] java.util.ConcurrentModificationException 
-2017-04-25 21:45:00,587 INFO  [ExcelTestData] Disposing WebDriver 
-2017-04-25 21:51:03,980 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 21:51:03,980 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 21:51:03,980 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-04-25 21:51:03,980 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 21:51:03,980 INFO  [ExcelTestData] **************************************************************************************** 
-2017-04-25 21:51:04,058 FATAL [TestAccess] There was a problem reading the Object Mapping XML file UnmarshalException null 
-2017-04-25 21:51:04,058 INFO  [ActionKeywords] Opening Browser - Chrome 
-2017-04-25 21:51:07,072 INFO  [ActionKeywords] Chrome browser started 
-2017-04-25 21:51:08,259 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
-2017-04-25 21:51:13,567 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAmount'] 
-2017-04-25 21:51:14,198 INFO  [ActionKeywords] 1 Year Open 4% is 1 Year Open 4% 
-2017-04-25 21:51:14,933 INFO  [ActionKeywords] 22 years is 22 years 
-2017-04-25 21:51:15,321 INFO  [ActionKeywords] Bi-Weekly is Bi-Weekly 
-2017-04-25 21:51:15,498 INFO  [ActionKeywords] Entering the text in .//*[@id='borrower0'] 
-2017-04-25 21:51:15,767 INFO  [ActionKeywords] Clicking on Webelement //span[@class='td-label-check'] 
-2017-04-25 21:51:15,855 INFO  [ActionKeywords] Clicking on Webelement //button[@aria-label='Calculate my payments'] 
-2017-04-25 21:51:15,998 INFO  [ActionKeywords] Captured Result - Ending Test 
-2017-04-25 21:51:17,693 ERROR [ExcelTestData] java.util.ConcurrentModificationException 
-2017-04-25 21:51:17,946 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-26 13:06:06,630 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 13:06:06,630 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 13:06:06,631 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-26 13:06:06,631 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 13:06:06,631 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 13:06:06,713 FATAL [TestAccess] There was a problem reading the Object Mapping XML file UnmarshalException null 
+2017-04-26 13:06:06,714 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-26 13:06:11,004 INFO  [ActionKeywords] Chrome browser started 
+2017-04-26 13:06:12,192 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-26 13:06:20,055 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAmount'] 
+2017-04-26 13:06:20,897 INFO  [ActionKeywords] 1 Year Open 4% is 1 Year Open 4% 
+2017-04-26 13:06:21,666 INFO  [ActionKeywords] 22 years is 22 years 
+2017-04-26 13:06:22,082 INFO  [ActionKeywords] Bi-Weekly is Bi-Weekly 
+2017-04-26 13:06:22,214 INFO  [ActionKeywords] Clicking on Webelement //label[@for='showAdditionalPayYes'] 
+2017-04-26 13:06:22,350 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAdditionalPayAmount'] 
+2017-04-26 13:06:22,831 INFO  [ActionKeywords] Annually is Annually 
+2017-04-26 13:06:22,992 INFO  [ActionKeywords] Entering the text in .//*[@id='borrower0'] 
+2017-04-26 13:06:23,263 INFO  [ActionKeywords] Clicking on Webelement //span[@class='td-label-check'] 
+2017-04-26 13:06:23,377 INFO  [ActionKeywords] Clicking on Webelement //button[@aria-label='Calculate my payments'] 
+2017-04-26 13:06:23,379 INFO  [ActionKeywords] Unable to find element //button[@aria-label='Calculate my payments'] Exception :NumberFormatException 
+2017-04-26 13:06:23,379 INFO  [ActionKeywords] Closing the browser 
+2017-04-26 13:08:40,610 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 13:08:40,611 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 13:08:40,611 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-26 13:08:40,611 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 13:08:40,611 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 13:08:40,695 FATAL [TestAccess] There was a problem reading the Object Mapping XML file UnmarshalException null 
+2017-04-26 13:08:40,696 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-26 13:08:43,684 INFO  [ActionKeywords] Chrome browser started 
+2017-04-26 13:08:44,886 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-26 13:08:50,432 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAmount'] 
+2017-04-26 13:08:51,201 INFO  [ActionKeywords] 1 Year Open 4% is 1 Year Open 4% 
+2017-04-26 13:08:51,950 INFO  [ActionKeywords] 22 years is 22 years 
+2017-04-26 13:08:52,362 INFO  [ActionKeywords] Bi-Weekly is Bi-Weekly 
+2017-04-26 13:08:52,502 INFO  [ActionKeywords] Clicking on Webelement //label[@for='showAdditionalPayYes'] 
+2017-04-26 13:08:52,621 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAdditionalPayAmount'] 
+2017-04-26 13:08:53,088 INFO  [ActionKeywords] Annually is Annually 
+2017-04-26 13:08:53,273 INFO  [ActionKeywords] Entering the text in .//*[@id='borrower0'] 
+2017-04-26 13:08:53,531 INFO  [ActionKeywords] Clicking on Webelement //span[@class='td-label-check'] 
+2017-04-26 13:08:53,624 INFO  [ActionKeywords] Clicking on Webelement //button[@aria-label='Calculate my payments'] 
+2017-04-26 13:10:34,024 INFO  [ActionKeywords] Unable to find element //button[@aria-label='Calculate my payments'] Exception :TimeoutException 
+2017-04-26 13:10:34,024 INFO  [ActionKeywords] Closing the browser 
+2017-04-26 16:47:27,099 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 16:47:27,099 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 16:47:27,099 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-26 16:47:27,099 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 16:47:27,100 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 16:47:27,191 FATAL [TestAccess] There was a problem reading the Object Mapping XML file UnmarshalException null 
+2017-04-26 16:47:27,192 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-26 16:47:34,790 INFO  [ActionKeywords] Chrome browser started 
+2017-04-26 16:47:35,981 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-26 16:47:41,676 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAmount'] 
+2017-04-26 16:47:42,575 INFO  [ActionKeywords] 1 Year Open 4% is 1 Year Open 4% 
+2017-04-26 16:47:43,418 INFO  [ActionKeywords] 22 years is 22 years 
+2017-04-26 16:47:43,795 INFO  [ActionKeywords] Bi-Weekly is Bi-Weekly 
+2017-04-26 16:47:43,946 INFO  [ActionKeywords] Clicking on Webelement //label[@for='showAdditionalPayYes'] 
+2017-04-26 16:47:44,156 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAdditionalPayAmount'] 
+2017-04-26 16:47:44,723 INFO  [ActionKeywords] Annually is Annually 
+2017-04-26 16:47:44,962 INFO  [ActionKeywords] Entering the text in .//*[@id='borrower0'] 
+2017-04-26 16:47:45,372 INFO  [ActionKeywords] Clicking on Webelement //span[@class='td-label-check'] 
+2017-04-26 16:47:45,510 INFO  [ActionKeywords] Clicking on Webelement //button[@aria-label='Calculate my payments'] 
+2017-04-26 16:48:19,108 INFO  [ActionKeywords] Unable to find element //button[@aria-label='Calculate my payments'] Exception :WebDriverException 
+2017-04-26 16:48:19,108 INFO  [ActionKeywords] Closing the browser 
+2017-04-26 16:48:19,289 ERROR [ActionKeywords] Not able to Close the Browser --- WebDriverException 
+2017-04-26 16:48:19,303 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 16:48:19,304 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 16:48:19,304 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-26 16:48:19,304 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 16:48:19,304 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-26 16:48:19,319 FATAL [TestAccess] There was a problem reading the Object Mapping XML file UnmarshalException null 
+2017-04-26 16:48:19,319 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-26 16:48:22,181 INFO  [ActionKeywords] Chrome browser started 
+2017-04-26 16:48:23,346 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-26 16:48:28,066 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAmount'] 
+2017-04-26 16:48:28,908 INFO  [ActionKeywords] 1 Year Open 4% is 1 Year Open 4% 
+2017-04-26 16:48:29,684 INFO  [ActionKeywords] 22 years is 22 years 
+2017-04-26 16:48:30,042 INFO  [ActionKeywords] Bi-Weekly is Bi-Weekly 
+2017-04-26 16:48:30,195 INFO  [ActionKeywords] Clicking on Webelement //label[@for='showAdditionalPayYes'] 
+2017-04-26 16:48:30,320 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAdditionalPayAmount'] 
+2017-04-26 16:48:30,772 INFO  [ActionKeywords] Annually is Annually 
+2017-04-26 16:48:30,926 INFO  [ActionKeywords] Entering the text in .//*[@id='borrower0'] 
+2017-04-26 16:48:31,182 INFO  [ActionKeywords] Clicking on Webelement //span[@class='td-label-check'] 
+2017-04-26 16:48:31,310 INFO  [ActionKeywords] Clicking on Webelement //button[@aria-label='Calculate my payments'] 
+2017-04-26 16:50:11,582 INFO  [ActionKeywords] Unable to find element //button[@aria-label='Calculate my payments'] Exception :TimeoutException 
+2017-04-26 16:50:11,582 INFO  [ActionKeywords] Closing the browser 
+2017-04-26 16:50:13,424 INFO  [ExcelTestData] Disposing WebDriver 

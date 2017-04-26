@@ -433,7 +433,7 @@ public abstract class ActionKeywords {
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
 			logger.info("Clicking on Webelement " + pageObject);
-			WebDriverWait wait = new WebDriverWait(driver, Integer.parseInt(data));
+			WebDriverWait wait = new WebDriverWait(driver, 100);
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath(pageObject)));
 			actionParams.getExtentTest().log(LogStatus.PASS, "Found element " + pageObject);
 		} catch (Exception e) {
