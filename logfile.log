@@ -84,3 +84,22 @@
 2017-04-26 16:50:11,582 INFO  [ActionKeywords] Unable to find element //button[@aria-label='Calculate my payments'] Exception :TimeoutException 
 2017-04-26 16:50:11,582 INFO  [ActionKeywords] Closing the browser 
 2017-04-26 16:50:13,424 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-28 13:21:47,420 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-28 13:21:47,454 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-28 13:21:47,454 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-28 13:21:47,454 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-28 13:21:47,454 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-28 13:21:47,544 FATAL [TestAccess] There was a problem reading the Object Mapping XML file UnmarshalException null 
+2017-04-28 13:21:47,545 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-28 13:21:54,675 INFO  [ActionKeywords] Chrome browser started 
+2017-04-28 13:21:56,025 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-28 13:22:00,171 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAmount'] 
+2017-04-28 13:22:00,975 INFO  [ActionKeywords] 1 Year Open 4% is 1 Year Open 4% 
+2017-04-28 13:22:02,106 INFO  [ActionKeywords] 22 years is 22 years 
+2017-04-28 13:22:02,457 INFO  [ActionKeywords] Bi-Weekly is Bi-Weekly 
+2017-04-28 13:22:02,619 INFO  [ActionKeywords] Entering the text in .//*[@id='borrower0'] 
+2017-04-28 13:22:02,907 INFO  [ActionKeywords] Clicking on Webelement //span[@class='td-label-check'] 
+2017-04-28 13:22:03,005 INFO  [ActionKeywords] Clicking on Webelement //button[@aria-label='Calculate my payments'] 
+2017-04-28 13:22:03,082 INFO  [ActionKeywords] Captured Result - Ending Test 
+2017-04-28 13:22:03,441 ERROR [ExcelTestData] java.util.ConcurrentModificationException 
+2017-04-28 13:22:03,965 INFO  [ExcelTestData] Disposing WebDriver 

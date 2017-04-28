@@ -1,3 +1,14 @@
+/*
+ * Authors: Nickolas reid
+ * Date Last Modified: April 28th 2017
+ * Purpose: 
+ * The purpose of this file is to all of the methods or "action keywords" of the ActionKeywords object. This works by the ExcelTestData Object
+ * reading in the TestSuite Excel file. ExcelTestData will store all of the rows for a selected test case(s) in memory. From here an ActionParams object
+ * is created and depending on what action is in Excel's actionkeyword is, actionParams will call the appropriate action keyword method.
+ */
+
+
+
 package com.cgi.code.testng;
 
 import java.io.File;
@@ -35,13 +46,16 @@ import com.cgi.code.xml.IXMLParam;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 /**
- * Base class for performing ActionKeywords found in xml/excel
+ * Base class for performing ActionKeywords found in excel
  *
  */
 public abstract class ActionKeywords {
+	
+	//Purpose of this file is to store multiple values for testing fields.
 	String propFileName = "temp/tempVariables.properties";
 	Properties prop = new Properties();
 	
+	//Logger for troubleshooting.
 	private static final Logger logger = Logger.getLogger(ActionKeywords.class.getName());
 
 	/**
@@ -141,41 +155,51 @@ public abstract class ActionKeywords {
 	}
 
 	/**
-	 * Navigate to the desired web page.
+	 * Takes in value from data set in excel and navigates to the url.
 	 * 
 	 * @param actionParams {@link com.cgi.code.testng.ActionParams}
 	 */
 	public void NavigateURL(ActionParams actionParams) {
 		try {
+			//Logs where the application is trying to navigate to.
 			logger.info("Navigating to URL - " + actionParams.getData());
+			//Grabs where the application needs to navigate to, and sends a get request to get the page data.
 			actionParams.getDriver().get(actionParams.getData());
 		} catch (Exception e) {
+			//Logs that the url had a problem.
 			logger.info("Not able to navigate to URL - " + actionParams.getData() + 
 					". Error message - " + e.getClass().getSimpleName());
+			//Grabs the reporting tool and logs the failure
 			actionParams.getExtentTest().log(LogStatus.FAIL,"Not able to navigate to URL - " + 
 					actionParams.getData() + ". Error message - " + e.getClass().getSimpleName());
 		}
 	}
 
 	/**
-	 * To left mouse click current item.
+	 * Takes in a value from the dataset in TestSuite.xsl,
+	 *  finds the item on the webpage and then performs a left mouse click.
 	 * 
 	 * @param actionParams {@link com.cgi.code.testng.ActionParams}
 	 */
 	public void Click(ActionParams actionParams) {
+		// This is the report object that generates a report file for a test run.
 		ExtentTest extentTest = actionParams.getExtentTest();
+		// This is a web driver to pull data from a page.
 		WebDriver driver = actionParams.getDriver();
+		// The page object refers to the Page Object column on the excel sheet.
 		String pageObject = actionParams.getPageObject();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
-		//WebDriverWait wait = new WebDriverWait(driver,5000);
+
 		try {
+			//Log that a click is happening.
 			logger.info("Clicking on Webelement " + actionParams.getPageObject());
-			//wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(GetLocator(pageObject, testCaseXMLData)))).click();
-			//driver.findElement(GetLocator(pageObject, testCaseXMLData)).click();
+			//Identifies the element via xpath via the pageObject String
 			driver.findElement(By.xpath(pageObject)).click();
+			//Log into the report that the click was successful.
 			extentTest.log(LogStatus.PASS, "Clicked on " + pageObject);
 		} catch (Exception e) {
+			//Log the error
 			logger.error("Not able to click --- " + e.getClass().getSimpleName());
+			//log in the report that the click was not successful and why.
 			extentTest.log(LogStatus.FAIL, "Unable to click on " + pageObject 
 					+ " Exception :" + e.getClass().getSimpleName());
 		}
