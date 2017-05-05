@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19990" started-at="2017-04-28T16:21:45Z" finished-at="2017-04-28T16:22:05Z">
+  <suite name="Default suite" duration-ms="24355" started-at="2017-04-28T18:15:28Z" finished-at="2017-04-28T18:15:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19990" started-at="2017-04-28T16:21:45Z" finished-at="2017-04-28T16:22:05Z">
+    <test name="Default test" duration-ms="24355" started-at="2017-04-28T18:15:28Z" finished-at="2017-04-28T18:15:52Z">
       <class name="com.cgi.code.testng.ExcelTestData">
-        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:com.cgi.code.testng.ExcelTestData@5a8e6209]" name="BeforeClass" is-config="true" duration-ms="2058" started-at="2017-04-28T13:21:45Z" finished-at="2017-04-28T13:21:47Z">
+        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:com.cgi.code.testng.ExcelTestData@5a8e6209]" name="BeforeClass" is-config="true" duration-ms="1157" started-at="2017-04-28T15:15:28Z" finished-at="2017-04-28T15:15:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.ExcelTestData@5a8e6209]" name="DoTest" duration-ms="16037" started-at="2017-04-28T13:21:47Z" data-provider="name" finished-at="2017-04-28T13:22:03Z">
+        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.ExcelTestData@5a8e6209]" name="DoTest" duration-ms="21387" started-at="2017-04-28T15:15:29Z" data-provider="name" finished-at="2017-04-28T15:15:51Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.cgi.code.testng.ExcelTestData@5a8e6209]" name="TearDown" is-config="true" duration-ms="1792" started-at="2017-04-28T13:22:03Z" finished-at="2017-04-28T13:22:05Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.cgi.code.testng.ExcelTestData@5a8e6209]" name="TearDown" is-config="true" duration-ms="1710" started-at="2017-04-28T15:15:51Z" finished-at="2017-04-28T15:15:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

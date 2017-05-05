@@ -103,3 +103,22 @@
 2017-04-28 13:22:03,082 INFO  [ActionKeywords] Captured Result - Ending Test 
 2017-04-28 13:22:03,441 ERROR [ExcelTestData] java.util.ConcurrentModificationException 
 2017-04-28 13:22:03,965 INFO  [ExcelTestData] Disposing WebDriver 
+2017-04-28 15:15:29,799 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-28 15:15:29,822 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-28 15:15:29,822 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-28 15:15:29,823 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-28 15:15:29,823 INFO  [ExcelTestData] **************************************************************************************** 
+2017-04-28 15:15:29,897 FATAL [TestAccess] There was a problem reading the Object Mapping XML file UnmarshalException null 
+2017-04-28 15:15:29,898 INFO  [ActionKeywords] Opening Browser - Chrome 
+2017-04-28 15:15:41,295 INFO  [ActionKeywords] Chrome browser started 
+2017-04-28 15:15:42,462 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-04-28 15:15:46,702 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAmount'] 
+2017-04-28 15:15:47,670 INFO  [ActionKeywords] 1 Year Open 4% is 1 Year Open 4% 
+2017-04-28 15:15:48,463 INFO  [ActionKeywords] 22 years is 22 years 
+2017-04-28 15:15:48,833 INFO  [ActionKeywords] Bi-Weekly is Bi-Weekly 
+2017-04-28 15:15:48,961 INFO  [ActionKeywords] Entering the text in .//*[@id='borrower0'] 
+2017-04-28 15:15:49,255 INFO  [ActionKeywords] Clicking on Webelement //span[@class='td-label-check'] 
+2017-04-28 15:15:49,353 INFO  [ActionKeywords] Clicking on Webelement //button[@aria-label='Calculate my payments'] 
+2017-04-28 15:15:49,428 INFO  [ActionKeywords] Captured Result - Ending Test 
+2017-04-28 15:15:51,166 ERROR [ExcelTestData] java.util.ConcurrentModificationException 
+2017-04-28 15:15:51,670 INFO  [ExcelTestData] Disposing WebDriver 

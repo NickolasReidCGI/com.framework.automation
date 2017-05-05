@@ -1,5 +1,5 @@
 /*
- * Authors: Nickolas reid
+ * Authors: Nickolas Reid
  * Date Last Modified: April 28th 2017
  * Purpose: 
  * The purpose of this file is to all of the methods or "action keywords" of the ActionKeywords object. This works by the ExcelTestData Object
@@ -65,30 +65,7 @@ public abstract class ActionKeywords {
 
 	}
 
-	/**
-	 * 
-	 * Function to Find Locator from Object Repository - This is not a keyword
-	 * function
-	 * 
-	 * @param objectName Friendly name of object we are looking for.
-	 * @param testCaseXMLData {@link com.cgi.code.testng.ActionParams}
-	 * @return By This is the identified Selenium object.
-	 */
-	public By GetLocator(String objectName, List<IXMLParam> testCaseXMLData) {
-		By ret = null;
-		
-		for (int i = 0; i < (testCaseXMLData != null ? testCaseXMLData.size() : 0); i++) {
-			if (testCaseXMLData.get(i).getAttribute().equals(objectName)) {
-				ret = testCaseXMLData.get(i).getSeleniumByObject();
-			}
-		}
-		if (ret == null) {
-			logger.fatal("EXCEPTION - " + objectName
-					+ "' not defined in Object Repository!!");
-		}
-		return ret;
-	}
-	
+
 	/***
 	 * 
 	 * @param objectName
@@ -218,7 +195,8 @@ public abstract class ActionKeywords {
 		try {
 			logger.info("Hover on Webelement " + actionParams.getPageObject());
 			Actions action = new Actions(driver);
-			WebElement webElement = driver.findElement(GetLocator(pageObject, testCaseXMLData));
+			//Fix this
+			WebElement webElement = driver.findElement(By.xpath(actionParams.getPageObject()));
 			action.moveToElement(webElement).perform();
 			extentTest.log(LogStatus.PASS, "Hover on " + pageObject);
 		} catch (Exception e) {
@@ -319,11 +297,7 @@ public abstract class ActionKeywords {
 			driver.findElement(By.xpath(pageObject)).clear();
 			driver.findElement(By.xpath(pageObject)).click();
 			driver.findElement(By.xpath(pageObject)).sendKeys(data);
-			
-			/* OLD CODE
-			driver.findElement(GetLocator(pageObject, testCaseXMLData)).click();
-			driver.findElement(GetLocator(pageObject, testCaseXMLData)).sendKeys(data);
-			*/
+
 			extentTest.log(LogStatus.PASS, "Entered text " + data + "  on " + pageObject);
 		} catch (Exception e) {
 			logger.error("Not able to Enter text in " + pageObject + " . Error Message  - " + 
@@ -346,8 +320,8 @@ public abstract class ActionKeywords {
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
 			logger.info("Selecting " + data + " in " + pageObject);
-			Select selectObject = new Select(driver.findElement(GetLocator(pageObject, 
-					testCaseXMLData)));
+			//Fix this
+			Select selectObject = new Select(driver.findElement(By.xpath(actionParams.getPageObject())));
 			selectObject.selectByVisibleText(data);
 			extentTest.log(LogStatus.PASS, "Selected  '" + data + "'  on " + pageObject);
 		} catch (Exception e) {
@@ -371,8 +345,8 @@ public abstract class ActionKeywords {
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
 			logger.info("Selecting " + data + " in " + pageObject);
-			Select selectObject = new Select(driver.findElement(GetLocator(pageObject,
-					testCaseXMLData)));
+			//Fix this
+			Select selectObject = new Select(driver.findElement(By.xpath(actionParams.getPageObject())));
 			selectObject.selectByValue(data);
 			extentTest.log(LogStatus.PASS, "Selected  '" + data + "'  on " + pageObject);
 		} catch (Exception e) {
@@ -396,8 +370,8 @@ public abstract class ActionKeywords {
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
 			logger.info("Selecting " + data + " in " + pageObject);
-			Select selectObject = new Select(driver.findElement(GetLocator(pageObject, 
-					testCaseXMLData)));
+			//Fix this
+			Select selectObject = new Select(driver.findElement(By.xpath(actionParams.getPageObject())));
 			selectObject.selectByIndex(Integer.parseInt(data));
 			extentTest.log(LogStatus.PASS, "Selected index  '" + data + "'  on " + pageObject);
 		} catch (Exception e) {
@@ -422,8 +396,8 @@ public abstract class ActionKeywords {
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
 			logger.info("Setting RadioButton " + pageObject);
-			List<WebElement> radioButtonGroup = driver.findElements(GetLocator(pageObject, 
-					testCaseXMLData));
+			//Fix this 
+			List<WebElement> radioButtonGroup = driver.findElements(By.xpath(actionParams.getPageObject()));
 			for (WebElement element : radioButtonGroup) {
 				if (element.getAttribute("value").equals(data)) {
 					element.click();
@@ -496,7 +470,8 @@ public abstract class ActionKeywords {
 			WebDriverWait wait = new WebDriverWait(driver, time);
 			logger.info("Waiting on Webelement " + pageObject);			
 			wait.until(ExpectedConditions.visibilityOfElementLocated
-					(GetLocator(pageObject, testCaseXMLData)));
+					//Fix this
+					(By.xpath(actionParams.getPageObject())));
 			actionParams.getExtentTest().log(LogStatus.PASS, "Found element " + pageObject);
 		} catch (Exception e) {
 			logger.info("Unable to find element " + actionParams.getPageObject() + 
@@ -520,7 +495,8 @@ public abstract class ActionKeywords {
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
 			logger.info("Verify object displayed " + pageObject);
-			if (driver.findElement(GetLocator(pageObject, testCaseXMLData)).isDisplayed()) {
+			//Fix this
+			if (driver.findElement(By.xpath(actionParams.getPageObject())).isDisplayed()) {
 				logger.info(pageObject + " is displayed");
 				status = LogStatus.PASS;
 			} else {
@@ -551,7 +527,8 @@ public abstract class ActionKeywords {
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {						
 			logger.info("Verify text displayed on " + pageObject + " is " + data);
-			String s = actionParams.getDriver().findElement(GetLocator(pageObject, testCaseXMLData))
+			//Fix this
+			String s = actionParams.getDriver().findElement(By.xpath(actionParams.getPageObject()))
 					.getText();
 			if (s.equals(data)) {
 				logger.info(data + " message is displayed");
@@ -577,7 +554,8 @@ public abstract class ActionKeywords {
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {						
 			logger.info("Verify text displayed on " + pageObject + " is " + data);
-			String s = actionParams.getDriver().findElement(GetLocator(pageObject, testCaseXMLData))
+			//fix this
+			String s = actionParams.getDriver().findElement(By.xpath(actionParams.getPageObject()))
 					.getText();
 			if (s.contains(data)) {
 				logger.info(data + " message is displayed");
@@ -783,7 +761,8 @@ public abstract class ActionKeywords {
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try{
-			String s = actionParams.getDriver().findElement(GetLocator(pageObject, testCaseXMLData))
+			//Fix this
+			String s = actionParams.getDriver().findElement(By.xpath(actionParams.getPageObject()))
 					.getText();
 			FileInputStream in = new FileInputStream(propFileName);
 			Properties prop = new Properties();
@@ -808,7 +787,8 @@ public abstract class ActionKeywords {
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try{
-			String s = actionParams.getDriver().findElement(GetLocator(pageObject, testCaseXMLData))
+			//Fix this
+			String s = actionParams.getDriver().findElement(By.xpath(actionParams.getPageObject()))
 					.getText();
 			s = s.replace("$", "");
 			s = s.replace(",", ".");
@@ -836,7 +816,8 @@ public abstract class ActionKeywords {
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try{
-			String s = actionParams.getDriver().findElement(GetLocator(pageObject, testCaseXMLData))
+			//Fix this
+			String s = actionParams.getDriver().findElement(By.xpath(actionParams.getPageObject()))
 					.getText();
 						
 			FileInputStream in = new FileInputStream(propFileName);
@@ -885,7 +866,9 @@ public abstract class ActionKeywords {
 		
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try{
-			String s = actionParams.getDriver().findElement(GetLocator(pageObject, testCaseXMLData))
+			
+			//Fix this
+			String s = actionParams.getDriver().findElement(By.xpath(actionParams.getPageObject()))
 					.getText();
 			s = s.replace("$", "");
 			s = s.replace(",", ".");
