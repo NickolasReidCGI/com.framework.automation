@@ -33,6 +33,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -102,7 +103,7 @@ public abstract class ActionKeywords {
 		try {
 			if (browserName.equals("mozilla")) {
 	
-				//ret = new FirefoxDriver();
+				ret = new FirefoxDriver();
 				
 				logger.info("Mozilla browser started");
 			} else if (browserName.equals("ie")) {

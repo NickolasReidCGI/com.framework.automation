@@ -6,7 +6,7 @@
       <class name="com.cgi.code.testng.ExcelTestData">
         <methods>
           <include name="BeforeClass"/>
-          <include name="DoTest" invocation-numbers="0 1"/>
+          <include name="DoTest" invocation-numbers="0"/>
           <include name="TearDown"/>
         </methods>
       </class> <!-- com.cgi.code.testng.ExcelTestData -->

@@ -75,8 +75,8 @@ public class ExcelTestData {
 				"/Binaries/chromedriver.exe");
 		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + 
 				"/Binaries/IEDriverServer.exe");
-	/*	System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + 
-				"/Binaries/geckodriver.exe");*/
+		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + 
+				"/Binaries/geckodriver.exe");
 		drivers = new ArrayList<WebDriver>();
 		
 		testCaseMap = getTestCaseMap("Test Cases");
