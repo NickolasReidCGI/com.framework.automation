@@ -191,3 +191,144 @@
 2017-05-15 13:37:27,677 FATAL [ActionKeywords] Not able to open the Browser --- Check Excel SessionNotCreatedException 
 2017-05-15 13:37:27,678 INFO  [ActionKeywords] Closing the browser 
 2017-05-15 13:37:27,678 ERROR [ActionKeywords] Not able to Close the Browser --- NullPointerException 
+2017-05-16 11:21:58,048 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:21:58,049 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:21:58,049 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-05-16 11:21:58,049 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:21:58,049 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:21:58,087 FATAL [TestAccess] There was a problem reading the Object Mapping XML file XMLStreamException java.io.FileNotFoundException: C:\Users\nickolas.reid\workspace\com.framework.automation\XML\Object Mapping.xml (The system cannot find the file specified) 
+2017-05-16 11:21:58,088 INFO  [ActionKeywords] Opening Browser - mozilla 
+2017-05-16 11:22:29,486 FATAL [ActionKeywords] Not able to open the Browser --- Check Excel UnreachableBrowserException 
+2017-05-16 11:22:29,487 INFO  [ActionKeywords] Closing the browser 
+2017-05-16 11:22:29,487 ERROR [ActionKeywords] Not able to Close the Browser --- NullPointerException 
+2017-05-16 11:23:00,004 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:23:00,005 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:23:00,005 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-05-16 11:23:00,005 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:23:00,005 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:23:00,011 FATAL [TestAccess] There was a problem reading the Object Mapping XML file XMLStreamException java.io.FileNotFoundException: C:\Users\nickolas.reid\workspace\com.framework.automation\XML\Object Mapping.xml (The system cannot find the file specified) 
+2017-05-16 11:23:00,011 INFO  [ActionKeywords] Opening Browser - mozilla 
+2017-05-16 11:23:14,711 FATAL [ActionKeywords] Not able to open the Browser --- Check Excel UnreachableBrowserException 
+2017-05-16 11:23:14,712 INFO  [ActionKeywords] Closing the browser 
+2017-05-16 11:23:14,712 ERROR [ActionKeywords] Not able to Close the Browser --- NullPointerException 
+2017-05-16 11:29:51,973 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:29:51,974 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:29:51,974 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-05-16 11:29:51,974 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:29:51,974 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:29:51,978 FATAL [TestAccess] There was a problem reading the Object Mapping XML file XMLStreamException java.io.FileNotFoundException: C:\Users\nickolas.reid\workspace\com.framework.automation\XML\Object Mapping.xml (The system cannot find the file specified) 
+2017-05-16 11:29:51,978 INFO  [ActionKeywords] Opening Browser - mozilla 
+2017-05-16 11:30:39,062 FATAL [ActionKeywords] Not able to open the Browser --- Check Excel WebDriverException 
+2017-05-16 11:30:39,063 INFO  [ActionKeywords] Closing the browser 
+2017-05-16 11:30:39,063 ERROR [ActionKeywords] Not able to Close the Browser --- NullPointerException 
+2017-05-16 11:33:57,034 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:33:57,034 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:33:57,034 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-05-16 11:33:57,034 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:33:57,034 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:33:57,039 FATAL [TestAccess] There was a problem reading the Object Mapping XML file XMLStreamException java.io.FileNotFoundException: C:\Users\nickolas.reid\workspace\com.framework.automation\XML\Object Mapping.xml (The system cannot find the file specified) 
+2017-05-16 11:33:57,040 INFO  [ActionKeywords] Opening Browser - mozilla 
+2017-05-16 11:34:44,657 FATAL [ActionKeywords] Not able to open the Browser --- Check Excel WebDriverException 
+2017-05-16 11:34:44,658 INFO  [ActionKeywords] Closing the browser 
+2017-05-16 11:34:44,658 ERROR [ActionKeywords] Not able to Close the Browser --- NullPointerException 
+2017-05-16 11:46:18,288 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:46:18,289 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:46:18,289 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-05-16 11:46:18,289 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:46:18,289 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:46:18,294 FATAL [TestAccess] There was a problem reading the Object Mapping XML file XMLStreamException java.io.FileNotFoundException: C:\Users\nickolas.reid\workspace\com.framework.automation\XML\Object Mapping.xml (The system cannot find the file specified) 
+2017-05-16 11:46:18,295 INFO  [ActionKeywords] Opening Browser - mozilla 
+2017-05-16 11:46:18,349 FATAL [ActionKeywords] Not able to open the Browser --- Check Excel WebDriverException 
+2017-05-16 11:46:18,350 INFO  [ActionKeywords] Closing the browser 
+2017-05-16 11:46:18,350 ERROR [ActionKeywords] Not able to Close the Browser --- NullPointerException 
+2017-05-16 11:46:52,664 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:46:52,664 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:46:52,664 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-05-16 11:46:52,664 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:46:52,664 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:46:52,668 FATAL [TestAccess] There was a problem reading the Object Mapping XML file XMLStreamException java.io.FileNotFoundException: C:\Users\nickolas.reid\workspace\com.framework.automation\XML\Object Mapping.xml (The system cannot find the file specified) 
+2017-05-16 11:46:52,669 INFO  [ActionKeywords] Opening Browser - mozilla 
+2017-05-16 11:50:47,577 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:50:47,578 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:50:47,578 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-05-16 11:50:47,578 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:50:47,578 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:50:47,581 FATAL [TestAccess] There was a problem reading the Object Mapping XML file XMLStreamException java.io.FileNotFoundException: C:\Users\nickolas.reid\workspace\com.framework.automation\XML\Object Mapping.xml (The system cannot find the file specified) 
+2017-05-16 11:50:47,582 INFO  [ActionKeywords] Opening Browser - mozilla 
+2017-05-16 11:51:44,269 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:51:44,270 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:51:44,270 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-05-16 11:51:44,270 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:51:44,270 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:51:44,274 FATAL [TestAccess] There was a problem reading the Object Mapping XML file XMLStreamException java.io.FileNotFoundException: C:\Users\nickolas.reid\workspace\com.framework.automation\XML\Object Mapping.xml (The system cannot find the file specified) 
+2017-05-16 11:51:44,274 INFO  [ActionKeywords] Opening Browser - mozilla 
+2017-05-16 11:52:33,727 FATAL [ActionKeywords] Not able to open the Browser --- Check Excel WebDriverException 
+2017-05-16 11:52:33,728 INFO  [ActionKeywords] Closing the browser 
+2017-05-16 11:52:33,728 ERROR [ActionKeywords] Not able to Close the Browser --- NullPointerException 
+2017-05-16 11:59:54,873 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:59:54,874 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:59:54,874 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-05-16 11:59:54,874 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:59:54,874 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 11:59:54,879 FATAL [TestAccess] There was a problem reading the Object Mapping XML file XMLStreamException java.io.FileNotFoundException: C:\Users\nickolas.reid\workspace\com.framework.automation\XML\Object Mapping.xml (The system cannot find the file specified) 
+2017-05-16 11:59:54,884 INFO  [ActionKeywords] Opening Browser - mozilla 
+2017-05-16 12:00:08,142 INFO  [ActionKeywords] Mozilla browser started 
+2017-05-16 12:00:08,566 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-05-16 12:00:15,007 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAmount'] 
+2017-05-16 12:00:17,173 INFO  [ActionKeywords] 1 Year Open 4% is 1 Year Open 4% 
+2017-05-16 12:00:18,139 INFO  [ActionKeywords] 22 years is 22 years 
+2017-05-16 12:00:18,607 INFO  [ActionKeywords] Bi-Weekly is Bi-Weekly 
+2017-05-16 12:00:18,841 INFO  [ActionKeywords] Entering the text in .//*[@id='borrower0'] 
+2017-05-16 12:00:19,135 INFO  [ActionKeywords] Clicking on Webelement //span[@class='td-label-check'] 
+2017-05-16 12:00:19,237 INFO  [ActionKeywords] Clicking on Webelement //button[@aria-label='Calculate my payments'] 
+2017-05-16 12:00:19,996 INFO  [ActionKeywords] Captured Result - Ending Test 
+2017-05-16 12:00:20,591 ERROR [ExcelTestData] java.util.ConcurrentModificationException 
+2017-05-16 12:00:20,886 INFO  [ExcelTestData] Disposing WebDriver 
+2017-05-16 12:40:46,401 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:40:46,402 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:40:46,402 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-05-16 12:40:46,402 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:40:46,402 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:40:46,405 FATAL [TestAccess] There was a problem reading the Object Mapping XML file XMLStreamException java.io.FileNotFoundException: C:\Users\nickolas.reid\workspace\com.framework.automation\XML\Object Mapping.xml (The system cannot find the file specified) 
+2017-05-16 12:40:46,405 INFO  [ActionKeywords] Opening Browser - ie 
+2017-05-16 12:41:07,237 FATAL [ActionKeywords] Not able to open the Browser --- Check Excel UnreachableBrowserException 
+2017-05-16 12:41:07,238 INFO  [ActionKeywords] Closing the browser 
+2017-05-16 12:41:07,238 ERROR [ActionKeywords] Not able to Close the Browser --- NullPointerException 
+2017-05-16 12:42:03,879 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:42:03,880 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:42:03,880 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-05-16 12:42:03,880 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:42:03,880 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:42:03,884 FATAL [TestAccess] There was a problem reading the Object Mapping XML file XMLStreamException java.io.FileNotFoundException: C:\Users\nickolas.reid\workspace\com.framework.automation\XML\Object Mapping.xml (The system cannot find the file specified) 
+2017-05-16 12:42:03,884 INFO  [ActionKeywords] Opening Browser - ie 
+2017-05-16 12:42:24,356 FATAL [ActionKeywords] Not able to open the Browser --- Check Excel UnreachableBrowserException 
+2017-05-16 12:42:24,357 INFO  [ActionKeywords] Closing the browser 
+2017-05-16 12:42:24,357 ERROR [ActionKeywords] Not able to Close the Browser --- NullPointerException 
+2017-05-16 12:44:07,733 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:44:07,734 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:44:07,734 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-05-16 12:44:07,734 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:44:07,734 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:44:07,738 FATAL [TestAccess] There was a problem reading the Object Mapping XML file XMLStreamException java.io.FileNotFoundException: C:\Users\nickolas.reid\workspace\com.framework.automation\XML\Object Mapping.xml (The system cannot find the file specified) 
+2017-05-16 12:44:07,739 INFO  [ActionKeywords] Opening Browser - ie 
+2017-05-16 12:44:12,342 INFO  [ActionKeywords] IE browser started 
+2017-05-16 12:44:12,359 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-05-16 12:44:12,616 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAmount'] 
+2017-05-16 12:44:13,376 ERROR [ActionKeywords] Not able to Enter text in .//*[@id='landingAmount'] . Error Message  - NoSuchElementException 
+2017-05-16 12:44:13,377 INFO  [ActionKeywords] Closing the browser 
+2017-05-16 12:44:13,393 ERROR [ActionKeywords] Not able to Close the Browser --- NoSuchWindowException 
+2017-05-16 12:44:13,678 INFO  [ExcelTestData] Disposing WebDriver 
+2017-05-16 12:55:28,518 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:55:28,518 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:55:28,518 INFO  [ExcelTestData] $$$$$$$$$$$$$$$$$$$$$                 Validate Mortgage Page       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-05-16 12:55:28,518 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:55:28,518 INFO  [ExcelTestData] **************************************************************************************** 
+2017-05-16 12:55:28,522 FATAL [TestAccess] There was a problem reading the Object Mapping XML file XMLStreamException java.io.FileNotFoundException: C:\Users\nickolas.reid\workspace\com.framework.automation\XML\Object Mapping.xml (The system cannot find the file specified) 
+2017-05-16 12:55:28,523 INFO  [ActionKeywords] Opening Browser - ie 
+2017-05-16 12:55:33,095 INFO  [ActionKeywords] IE browser started 
+2017-05-16 12:55:33,112 INFO  [ActionKeywords] Navigating to URL - https://tools.td.com/mortgage-payment-calculator/ 
+2017-05-16 12:55:33,332 INFO  [ActionKeywords] Entering the text in .//*[@id='landingAmount'] 
+2017-05-16 12:55:33,887 ERROR [ActionKeywords] Not able to Enter text in .//*[@id='landingAmount'] . Error Message  - NoSuchElementException 
+2017-05-16 12:55:33,889 INFO  [ActionKeywords] Closing the browser 
+2017-05-16 12:55:33,904 ERROR [ActionKeywords] Not able to Close the Browser --- NoSuchWindowException 
+2017-05-16 12:55:34,156 INFO  [ExcelTestData] Disposing WebDriver 

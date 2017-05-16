@@ -73,10 +73,8 @@ public class ExcelTestData {
 		DOMConfigurator.configure(System.getProperty("user.dir") + "//XML//log4j.xml");
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + 
 				"/Binaries/chromedriver.exe");
-		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + 
-				"/Binaries/IEDriverServer.exe");
-		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + 
-				"/Binaries/geckodriver.exe");
+		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/Binaries/IEDriverServer.exe");
+		System.setProperty("webdriver.firefox.bin","C:\\Program Files\\Mozilla Firefox\\firefox.exe");
 		drivers = new ArrayList<WebDriver>();
 		
 		testCaseMap = getTestCaseMap("Test Cases");
