@@ -45,7 +45,7 @@ public class TestAccess {
 			TestCaseXMLDataContainer container = unmarshaller.unmarshal(
 					streamReader, TestCaseXMLDataContainer.class).getValue();
 			ret = combineXMLTest(container.getData());
-		} catch (XMLStreamException | JAXBException e) {
+		} catch (Exception e) {
 			logger.fatal("There was a problem reading the Object Mapping XML file " + 
 					e.getClass().getSimpleName() + " " + e.getMessage());
 		}
