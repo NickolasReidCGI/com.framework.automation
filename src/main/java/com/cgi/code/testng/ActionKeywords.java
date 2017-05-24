@@ -23,11 +23,9 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -55,9 +53,6 @@ public abstract class ActionKeywords {
 	String propFileName = "temp/tempVariables.properties";
 	Properties prop = new Properties();
 	
-	//Logger for troubleshooting.
-	private static final Logger logger = Logger.getLogger(ActionKeywords.class.getName());
-
 	/**
 	 * Constructor
 	 */
@@ -72,7 +67,7 @@ public abstract class ActionKeywords {
 	 * @param testCaseXMLData
 	 * @return
 	 */
-	public String GetJS(String objectName, List<IXMLParam> testCaseXMLData) {
+	public String GetJS(String objectName, List<XMLParamInterface> testCaseXMLData) {
 		String ret = null;
 		
 		for (int i = 0; i < (testCaseXMLData != null ? testCaseXMLData.size() : 0); i++) {
@@ -190,7 +185,7 @@ public abstract class ActionKeywords {
 		ExtentTest extentTest = actionParams.getExtentTest();
 		WebDriver driver = actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		//WebDriverWait wait = new WebDriverWait(driver,5000);
 		try {
 			System.out.println("Hover on Webelement " + actionParams.getPageObject());
@@ -238,7 +233,7 @@ public abstract class ActionKeywords {
 		String jScript = null;
 		WebDriver driver = actionParams.getDriver();
 		ExtentTest extentTest = actionParams.getExtentTest();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		List<XMLParamInterface> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
 			System.out.println("Calling " + object);
 			for (int i = 0; i < (testCaseXMLData != null ? testCaseXMLData.size() : 0); i++) {
@@ -291,7 +286,7 @@ public abstract class ActionKeywords {
 		WebDriver driver = actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		try {
 			System.out.println("Entering the text in " + actionParams.getPageObject());
 			driver.findElement(By.xpath(pageObject)).clear();
@@ -317,7 +312,7 @@ public abstract class ActionKeywords {
 		WebDriver driver = actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		try {
 			System.out.println("Selecting " + data + " in " + pageObject);
 			//Fix this
@@ -342,7 +337,7 @@ public abstract class ActionKeywords {
 		WebDriver driver = actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		try {
 			System.out.println("Selecting " + data + " in " + pageObject);
 			//Fix this
@@ -367,7 +362,7 @@ public abstract class ActionKeywords {
 		WebDriver driver = actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		try {
 			System.out.println("Selecting " + data + " in " + pageObject);
 			//Fix this
@@ -393,7 +388,7 @@ public abstract class ActionKeywords {
 		WebDriver driver = actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		try {
 			System.out.println("Setting RadioButton " + pageObject);
 			//Fix this 
@@ -427,8 +422,8 @@ public abstract class ActionKeywords {
 		ExtentTest extentTest = actionParams.getExtentTest();
 		WebDriver driver = actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
-		String data = actionParams.getData();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getData();
+		actionParams.getTestCaseXMLData();
 		try {
 			System.out.println("Clicking on Webelement " + pageObject);
 			WebDriverWait wait = new WebDriverWait(driver, 100);
@@ -463,7 +458,7 @@ public abstract class ActionKeywords {
 		WebDriver driver = actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		float fTime = Float.parseFloat(data);
 		long time = (long)fTime;
 		try {
@@ -492,7 +487,7 @@ public abstract class ActionKeywords {
 		WebDriver driver = actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		try {
 			System.out.println("Verify object displayed " + pageObject);
 			//Fix this
@@ -524,7 +519,7 @@ public abstract class ActionKeywords {
 		WebDriver driver = actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		try {						
 			System.out.println("Verify text displayed on " + pageObject + " is " + data);
 			//Fix this
@@ -551,7 +546,7 @@ public abstract class ActionKeywords {
 		WebDriver driver = actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		try {						
 			System.out.println("Verify text displayed on " + pageObject + " is " + data);
 			//fix this
@@ -759,7 +754,7 @@ public abstract class ActionKeywords {
 	public void setValueIn(ActionParams actionParams){
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		try{
 			//Fix this
 			String s = actionParams.getDriver().findElement(By.xpath(actionParams.getPageObject()))
@@ -785,7 +780,7 @@ public abstract class ActionKeywords {
 		actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		try{
 			//Fix this
 			String s = actionParams.getDriver().findElement(By.xpath(actionParams.getPageObject()))
@@ -814,7 +809,7 @@ public abstract class ActionKeywords {
 		WebDriver driver = actionParams.getDriver();
 		String pageObject = actionParams.getPageObject();
 		String data = actionParams.getData();
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		try{
 			//Fix this
 			String s = actionParams.getDriver().findElement(By.xpath(actionParams.getPageObject()))
@@ -864,7 +859,7 @@ public abstract class ActionKeywords {
 			d[0] = data;
 		}
 		
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		actionParams.getTestCaseXMLData();
 		try{
 			
 			//Fix this

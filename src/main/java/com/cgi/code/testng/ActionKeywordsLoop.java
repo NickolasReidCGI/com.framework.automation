@@ -13,8 +13,8 @@ import com.relevantcodes.extentreports.LogStatus;
  * ALC specific class for performing ActionKeywords found in xml/excel
  * 
  */
-public class ActionKeywordsAlc extends ActionKeywords {
-	private static final Logger logger = Logger.getLogger(ActionKeywordsAlc.class.getName());
+public class ActionKeywordsLoop extends ActionKeywords {
+	private static final Logger logger = Logger.getLogger(ActionKeywordsLoop.class.getName());
 
 	/**
 	 * Used to pick numbers in a loop.
@@ -27,7 +27,7 @@ public class ActionKeywordsAlc extends ActionKeywords {
 		String data = actionParams.getData();
 		String pageObject = actionParams.getPageObject();
 		String[] numbers = data.split("\\|");
-		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
+		List<XMLParamInterface> testCaseXMLData = actionParams.getTestCaseXMLData();
 		
 		try {
 			logger.info("Lottery number selection function");

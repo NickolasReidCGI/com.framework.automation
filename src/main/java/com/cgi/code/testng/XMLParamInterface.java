@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
  * 
  *
  */
-public interface IXMLParam {
+public interface XMLParamInterface {
 	
 	public String getValue();
 	public String getAttribute();

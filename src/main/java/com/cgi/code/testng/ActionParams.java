@@ -16,7 +16,7 @@ public class ActionParams {
 	private String data;
 	private WebDriver driver;
 	private ExtentTest extentTest;
-	private List<IXMLParam> testCaseXMLData;
+	private List<XMLParamInterface> testCaseXMLData;
 
 	/**
 	 * Used to store data used in the Methods found in ActionKeywords.java
@@ -28,7 +28,7 @@ public class ActionParams {
 	 * @param testCaseXMLData Contains data from XML relevant to current test.
 	 */
 	public ActionParams(String pageObject, String data, WebDriver driver,
-			ExtentTest extentTest, List<IXMLParam> testCaseXMLData) {
+			ExtentTest extentTest, List<XMLParamInterface> testCaseXMLData) {
 		this.pageObject = pageObject;
 		this.data = data;
 		this.driver = driver;
@@ -77,12 +77,12 @@ public class ActionParams {
 	}
 
 	
-	public List<IXMLParam> getTestCaseXMLData() {
+	public List<XMLParamInterface> getTestCaseXMLData() {
 		return testCaseXMLData;
 	}
 
 	
-	public void setTestCaseXMLData(List<IXMLParam> testCaseXMLData) {
+	public void setTestCaseXMLData(List<XMLParamInterface> testCaseXMLData) {
 		this.testCaseXMLData = testCaseXMLData;
 	}
 
