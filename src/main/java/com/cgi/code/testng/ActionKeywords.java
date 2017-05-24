@@ -82,7 +82,7 @@ public abstract class ActionKeywords {
 			}
 		}
 		if (ret == null) {
-			logger.fatal("EXCEPTION - " + objectName
+			System.out.print("EXCEPTION - " + objectName
 					+ "' not defined in Object Repository!!");
 		}
 		return ret;		
@@ -97,7 +97,7 @@ public abstract class ActionKeywords {
 	 * 		   InternetExplorerDriver, ChromeDriver, FirefoxDriver or null.
 	 */
 	public WebDriver OpenBrowser(ActionParams actionParams) {
-		logger.info("Opening Browser - " + actionParams.getData());
+		System.out.println("Opening Browser - " + actionParams.getData());
 		String browserName = actionParams.getData().toLowerCase();
 		WebDriver ret = null;
 		try {
@@ -105,27 +105,27 @@ public abstract class ActionKeywords {
 	
 				ret = new FirefoxDriver();
 				
-				logger.info("Mozilla browser started");
+				System.out.println("Mozilla browser started");
 			} else if (browserName.equals("ie")) {
 
 				ret = new InternetExplorerDriver();
-				logger.info("IE browser started");
+				System.out.println("IE browser started");
 			} else if (browserName.equals("chrome")) {
 
 				ret = new ChromeDriver();
-				logger.info("Chrome browser started");
+				System.out.println("Chrome browser started");
 			}
 			else
 			{
 				ret = null;
-				logger.info("No browser selected! Check Excel");
+				System.out.println("No browser selected! Check Excel");
 			}
 			if (((RemoteWebDriver) ret).getSessionId() != null) {
 				ret.manage().window().maximize();
 			}
 
 		} catch (Exception e) {
-			logger.fatal("Not able to open the Browser --- Check Excel " + e.getClass().getSimpleName());
+			System.out.println("Not able to open the Browser --- Check Excel " + e.getClass().getSimpleName());
 			actionParams.getExtentTest().log(LogStatus.FAIL, "Not able to open the Browser --- " +
 					e.getClass().getSimpleName());
 		}
@@ -140,12 +140,12 @@ public abstract class ActionKeywords {
 	public void NavigateURL(ActionParams actionParams) {
 		try {
 			//Logs where the application is trying to navigate to.
-			logger.info("Navigating to URL - " + actionParams.getData());
+			System.out.println("Navigating to URL - " + actionParams.getData());
 			//Grabs where the application needs to navigate to, and sends a get request to get the page data.
 			actionParams.getDriver().get(actionParams.getData());
 		} catch (Exception e) {
 			//Logs that the url had a problem.
-			logger.info("Not able to navigate to URL - " + actionParams.getData() + 
+			System.out.println("Not able to navigate to URL - " + actionParams.getData() + 
 					". Error message - " + e.getClass().getSimpleName());
 			//Grabs the reporting tool and logs the failure
 			actionParams.getExtentTest().log(LogStatus.FAIL,"Not able to navigate to URL - " + 
@@ -169,14 +169,14 @@ public abstract class ActionKeywords {
 
 		try {
 			//Log that a click is happening.
-			logger.info("Clicking on Webelement " + actionParams.getPageObject());
+			System.out.println("Clicking on Webelement " + actionParams.getPageObject());
 			//Identifies the element via xpath via the pageObject String
 			driver.findElement(By.xpath(pageObject)).click();
 			//Log into the report that the click was successful.
 			extentTest.log(LogStatus.PASS, "Clicked on " + pageObject);
 		} catch (Exception e) {
 			//Log the error
-			logger.error("Not able to click --- " + e.getClass().getSimpleName());
+			System.out.println("Not able to click --- " + e.getClass().getSimpleName());
 			//log in the report that the click was not successful and why.
 			extentTest.log(LogStatus.FAIL, "Unable to click on " + pageObject 
 					+ " Exception :" + e.getClass().getSimpleName());
@@ -194,14 +194,14 @@ public abstract class ActionKeywords {
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		//WebDriverWait wait = new WebDriverWait(driver,5000);
 		try {
-			logger.info("Hover on Webelement " + actionParams.getPageObject());
+			System.out.println("Hover on Webelement " + actionParams.getPageObject());
 			Actions action = new Actions(driver);
 			//Fix this
 			WebElement webElement = driver.findElement(By.xpath(actionParams.getPageObject()));
 			action.moveToElement(webElement).perform();
 			extentTest.log(LogStatus.PASS, "Hover on " + pageObject);
 		} catch (Exception e) {
-			logger.error("Not able to hover on --- " + e.getClass().getSimpleName());
+			System.out.println("Not able to hover on --- " + e.getClass().getSimpleName());
 			extentTest.log(LogStatus.FAIL, "Unable to hover on " + pageObject 
 					+ " Exception :" + e.getClass().getSimpleName());
 		}
@@ -241,7 +241,7 @@ public abstract class ActionKeywords {
 		ExtentTest extentTest = actionParams.getExtentTest();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
-			logger.info("Calling " + object);
+			System.out.println("Calling " + object);
 			for (int i = 0; i < (testCaseXMLData != null ? testCaseXMLData.size() : 0); i++) {
 				if (testCaseXMLData.get(i).getAttribute().equals(object)) {
 					jScript = testCaseXMLData.get(i).getValue();
@@ -251,7 +251,7 @@ public abstract class ActionKeywords {
 				((JavascriptExecutor) driver).executeScript(jScript);
 			}
 		} catch (Exception e) {
-			logger.error("Unable to call " + object + " method. (" + e.getStackTrace() + ")");
+			System.out.println("Unable to call " + object + " method. (" + e.getStackTrace() + ")");
 			extentTest.log(LogStatus.FAIL, "Unable to call " + object + " method");
 		}
 	}
@@ -277,7 +277,7 @@ public abstract class ActionKeywords {
 				alert.dismiss();
 			}
 		} catch (Exception e) {
-			logger.error("Unable to handle modal diaglog box. (" + "Argument=" + data + ")");
+			System.out.println("Unable to handle modal diaglog box. (" + "Argument=" + data + ")");
 			extentTest.log(LogStatus.FAIL, "Modal diaglog box failed");
 		}
 	}
@@ -294,14 +294,14 @@ public abstract class ActionKeywords {
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
-			logger.info("Entering the text in " + actionParams.getPageObject());
+			System.out.println("Entering the text in " + actionParams.getPageObject());
 			driver.findElement(By.xpath(pageObject)).clear();
 			driver.findElement(By.xpath(pageObject)).click();
 			driver.findElement(By.xpath(pageObject)).sendKeys(data);
 
 			extentTest.log(LogStatus.PASS, "Entered text " + data + "  on " + pageObject);
 		} catch (Exception e) {
-			logger.error("Not able to Enter text in " + pageObject + " . Error Message  - " + 
+			System.out.println("Not able to Enter text in " + pageObject + " . Error Message  - " + 
 					e.getClass().getSimpleName());
 			extentTest.log(LogStatus.FAIL, "Unable to enter text on " + pageObject + 
 					" Exception :" + e.getClass().getSimpleName());
@@ -320,13 +320,13 @@ public abstract class ActionKeywords {
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
-			logger.info("Selecting " + data + " in " + pageObject);
+			System.out.println("Selecting " + data + " in " + pageObject);
 			//Fix this
 			Select selectObject = new Select(driver.findElement(By.xpath(actionParams.getPageObject())));
 			selectObject.selectByVisibleText(data);
 			extentTest.log(LogStatus.PASS, "Selected  '" + data + "'  on " + pageObject);
 		} catch (Exception e) {
-			logger.error("Not able to select item in " + pageObject + " . Error Message  - " + 
+			System.out.println("Not able to select item in " + pageObject + " . Error Message  - " + 
 					e.getClass().getSimpleName());
 			extentTest.log(LogStatus.FAIL, "Unable to select item on " + pageObject + 
 					" Exception :" + e.getClass().getSimpleName());
@@ -345,13 +345,13 @@ public abstract class ActionKeywords {
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
-			logger.info("Selecting " + data + " in " + pageObject);
+			System.out.println("Selecting " + data + " in " + pageObject);
 			//Fix this
 			Select selectObject = new Select(driver.findElement(By.xpath(actionParams.getPageObject())));
 			selectObject.selectByValue(data);
 			extentTest.log(LogStatus.PASS, "Selected  '" + data + "'  on " + pageObject);
 		} catch (Exception e) {
-			logger.error("Not able to select item in " + pageObject + " . Error Message  - " + 
+			System.out.println("Not able to select item in " + pageObject + " . Error Message  - " + 
 					e.getClass().getSimpleName());
 			extentTest.log(LogStatus.FAIL, "Unable to select item on " + pageObject + 
 					" Exception :" + e.getClass().getSimpleName());
@@ -370,13 +370,13 @@ public abstract class ActionKeywords {
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
-			logger.info("Selecting " + data + " in " + pageObject);
+			System.out.println("Selecting " + data + " in " + pageObject);
 			//Fix this
 			Select selectObject = new Select(driver.findElement(By.xpath(actionParams.getPageObject())));
 			selectObject.selectByIndex(Integer.parseInt(data));
 			extentTest.log(LogStatus.PASS, "Selected index  '" + data + "'  on " + pageObject);
 		} catch (Exception e) {
-			logger.error("Not able to select item in " + pageObject + " . Error Message  - " + 
+			System.out.println("Not able to select item in " + pageObject + " . Error Message  - " + 
 					e.getClass().getSimpleName());
 			extentTest.log(LogStatus.FAIL, "Unable to select item on " + pageObject + 
 					" Exception :" + e.getClass().getSimpleName());
@@ -396,7 +396,7 @@ public abstract class ActionKeywords {
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
-			logger.info("Setting RadioButton " + pageObject);
+			System.out.println("Setting RadioButton " + pageObject);
 			//Fix this 
 			List<WebElement> radioButtonGroup = driver.findElements(By.xpath(actionParams.getPageObject()));
 			for (WebElement element : radioButtonGroup) {
@@ -409,10 +409,10 @@ public abstract class ActionKeywords {
 				extentTest.log(LogStatus.PASS, "Selected  '" + data + "'  on " + pageObject);
 			} else {
 				extentTest.log(LogStatus.FAIL, "Unable to find radio button on " + pageObject);
-				logger.error("Unable to find radio button on " + pageObject);
+				System.out.println("Unable to find radio button on " + pageObject);
 			}
 		} catch (Exception e) {
-			logger.error("Not able to select item in " + pageObject + " . Error Message  - " +
+			System.out.println("Not able to select item in " + pageObject + " . Error Message  - " +
 					e.getClass().getSimpleName());
 			extentTest.log(LogStatus.FAIL, "Unable to select item on " + pageObject + 
 					" Exception :" + e.getClass().getSimpleName());
@@ -431,12 +431,12 @@ public abstract class ActionKeywords {
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
-			logger.info("Clicking on Webelement " + pageObject);
+			System.out.println("Clicking on Webelement " + pageObject);
 			WebDriverWait wait = new WebDriverWait(driver, 100);
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath(pageObject)));
 			actionParams.getExtentTest().log(LogStatus.PASS, "Found element " + pageObject);
 		} catch (Exception e) {
-			logger.info("Unable to find element " + actionParams.getPageObject() + 
+			System.out.println("Unable to find element " + actionParams.getPageObject() + 
 					" Exception :" + e.getClass().getSimpleName());
 			extentTest.log(LogStatus.FAIL, "Unable to find element " + pageObject + 
 					" Exception :" + e.getClass().getSimpleName());
@@ -450,12 +450,12 @@ public abstract class ActionKeywords {
 	 */
 	public void CloseBrowser(ActionParams actionParams) {
 		try {
-			logger.info("Closing the browser");
+			System.out.println("Closing the browser");
 			actionParams.getDriver().close();
 			actionParams.getDriver().quit();
 			actionParams.getExtentTest().log(LogStatus.INFO, "Browser closed");
 		} catch (Exception e) {
-			logger.error("Not able to Close the Browser --- " + e.getClass().getSimpleName());
+			System.out.println("Not able to Close the Browser --- " + e.getClass().getSimpleName());
 		}
 	}
 
@@ -469,13 +469,13 @@ public abstract class ActionKeywords {
 		long time = (long)fTime;
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, time);
-			logger.info("Waiting on Webelement " + pageObject);			
+			System.out.println("Waiting on Webelement " + pageObject);			
 			wait.until(ExpectedConditions.visibilityOfElementLocated
 					//Fix this
 					(By.xpath(actionParams.getPageObject())));
 			actionParams.getExtentTest().log(LogStatus.PASS, "Found element " + pageObject);
 		} catch (Exception e) {
-			logger.info("Unable to find element " + actionParams.getPageObject() + 
+			System.out.println("Unable to find element " + actionParams.getPageObject() + 
 					" Exception :" + e.getClass().getSimpleName());
 			extentTest.log(LogStatus.FAIL, "Unable to find element " + pageObject + 
 					" Exception :" + e.getClass().getSimpleName());
@@ -495,18 +495,18 @@ public abstract class ActionKeywords {
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {
-			logger.info("Verify object displayed " + pageObject);
+			System.out.println("Verify object displayed " + pageObject);
 			//Fix this
 			if (driver.findElement(By.xpath(actionParams.getPageObject())).isDisplayed()) {
-				logger.info(pageObject + " is displayed");
+				System.out.println(pageObject + " is displayed");
 				status = LogStatus.PASS;
 			} else {
-				logger.error(pageObject + " is not displayed");
+				System.out.println(pageObject + " is not displayed");
 			}
 			extentTest.log(status, "Validate object " + pageObject + " is " + data + 
 					extentTest.addScreenCapture(CreateScreenshot(driver)));
 		} catch (Exception e) {
-			logger.error("Failed to verify " + pageObject + " . Error Message  - " +
+			System.out.println("Failed to verify " + pageObject + " . Error Message  - " +
 					e.getClass().getSimpleName());
 			extentTest.log(LogStatus.FAIL, "Validate object " + pageObject + " is " + data + 
 					extentTest.addScreenCapture(CreateScreenshot(driver)));
@@ -527,21 +527,21 @@ public abstract class ActionKeywords {
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {						
-			logger.info("Verify text displayed on " + pageObject + " is " + data);
+			System.out.println("Verify text displayed on " + pageObject + " is " + data);
 			//Fix this
 			String s = actionParams.getDriver().findElement(By.xpath(actionParams.getPageObject()))
 					.getText();
 			if (s.equals(data)) {
-				logger.info(data + " message is displayed");
+				System.out.println(data + " message is displayed");
 				extentTest.log(LogStatus.PASS, "Validate Text on " + pageObject + " is " + 
 						data + extentTest.addScreenCapture(CreateScreenshot(driver)));
 			} else {
-				logger.error(data + " message is not displayed");
+				System.out.println(data + " message is not displayed");
 				extentTest.log(LogStatus.FAIL, "Validate Text on " + pageObject + " is Not " + 
 						data +" actual text is " + s + extentTest.addScreenCapture(CreateScreenshot(driver)));
 			}
 		} catch (Exception e) {
-			logger.error("Failed to verify " + pageObject + " . Error Message  - " + 
+			System.out.println("Failed to verify " + pageObject + " . Error Message  - " + 
 					e.getClass().getSimpleName());
 			extentTest.log(LogStatus.FAIL, "Failed to verify " + pageObject + 
 					" . Error Message  - " + e.getClass().getSimpleName());
@@ -554,21 +554,21 @@ public abstract class ActionKeywords {
 		String data = actionParams.getData();
 		List<IXMLParam> testCaseXMLData = actionParams.getTestCaseXMLData();
 		try {						
-			logger.info("Verify text displayed on " + pageObject + " is " + data);
+			System.out.println("Verify text displayed on " + pageObject + " is " + data);
 			//fix this
 			String s = actionParams.getDriver().findElement(By.xpath(actionParams.getPageObject()))
 					.getText();
 			if (s.contains(data)) {
-				logger.info(data + " message is displayed");
+				System.out.println(data + " message is displayed");
 				extentTest.log(LogStatus.PASS, "Validate Text on " + pageObject + " is " + 
 						data + extentTest.addScreenCapture(CreateScreenshot(driver)));
 			} else {
-				logger.error(data + " message is not displayed");
+				System.out.println(data + " message is not displayed");
 				extentTest.log(LogStatus.FAIL, "Validate Text on " + pageObject + " is Not " + 
 						data +" actual text is " + s + extentTest.addScreenCapture(CreateScreenshot(driver)));
 			}
 		} catch (Exception e) {
-			logger.error("Failed to verify " + pageObject + " . Error Message  - " + 
+			System.out.println("Failed to verify " + pageObject + " . Error Message  - " + 
 					e.getClass().getSimpleName());
 			extentTest.log(LogStatus.FAIL, "Failed to verify " + pageObject + 
 					" . Error Message  - " + e.getClass().getSimpleName());
@@ -581,19 +581,19 @@ public abstract class ActionKeywords {
 		
 		String data = actionParams.getData();
 		try {						
-			logger.info("Verify title displayed is " + data);
+			System.out.println("Verify title displayed is " + data);
 			String s = driver.getTitle();
 			if (s.contains(data)) {
-				logger.info(data + " message is displayed");
+				System.out.println(data + " message is displayed");
 				extentTest.log(LogStatus.PASS, "Validate title displayed is " + 
 						data + extentTest.addScreenCapture(CreateScreenshot(driver)));
 			} else {
-				logger.error(data + " message is not displayed");
+				System.out.println(data + " message is not displayed");
 				extentTest.log(LogStatus.FAIL, "Validate tile is " + 
 						data + extentTest.addScreenCapture(CreateScreenshot(driver)));
 			}
 		} catch (Exception e) {
-			logger.error("Failed to verify title. Error Message  - " + 
+			System.out.println("Failed to verify title. Error Message  - " + 
 					e.getClass().getSimpleName());
 			extentTest.log(LogStatus.FAIL, "Failed to verify title"  + 
 					" . Error Message  - " + e.getClass().getSimpleName());
@@ -607,7 +607,7 @@ public abstract class ActionKeywords {
 		WebDriver driver = actionParams.getDriver();
 		String[] image = actionParams.getData().split(",",2);
 		try{
-			logger.info("Clicking on " + image[0]);
+			System.out.println("Clicking on " + image[0]);
 			
 			System.out.println(image[0]+ "   "+ image[1]);
 			Screen s = new Screen();
@@ -621,7 +621,7 @@ public abstract class ActionKeywords {
 	        	if(i == imageNum){
 	        		//System.out.println("ImageFound");
 	        		s.click(matches.next());
-	        		logger.info(image[0] + " Image is displayed");
+	        		System.out.println(image[0] + " Image is displayed");
 	        		extentTest.log(LogStatus.PASS, "Image " + image[0] + " found " + 
 							extentTest.addScreenCapture(CreateScreenshot(driver)));
 	        	}else{
@@ -631,7 +631,7 @@ public abstract class ActionKeywords {
 	        //s.click(path, imageNum);    
 	        TimeUnit.SECONDS.sleep(5);
 		} catch (Exception e){
-			logger.error("Not able to find the image "+ image[0]);
+			System.out.println("Not able to find the image "+ image[0]);
 			extentTest.log(LogStatus.FAIL, "Image " + image[0] + " not found " + 
 					 extentTest.addScreenCapture(CreateScreenshot(driver)));
 			actionParams.getExtentTest().log(LogStatus.FAIL, "Unable to click image " 
@@ -643,7 +643,7 @@ public abstract class ActionKeywords {
 	public void ValidateImage(ActionParams actionParams){
 		String[] image = actionParams.getData().split(",",2);
 		try{
-			logger.info("Found image " + image[0]);
+			System.out.println("Found image " + image[0]);
 			
 			System.out.println(image[0]+ "   "+ image[1]);
 			Screen s = new Screen();
@@ -664,7 +664,7 @@ public abstract class ActionKeywords {
 		       //s.click(path, imageNum);    
 		       TimeUnit.SECONDS.sleep(5);
 		} catch (Exception e){
-			logger.error("Not able to find the image "+ image[0]);
+			System.out.println("Not able to find the image "+ image[0]);
 			actionParams.getExtentTest().log(LogStatus.FAIL, "Unable to find image " 
 					+ image[0]);
 		}
@@ -674,7 +674,7 @@ public abstract class ActionKeywords {
 		String folderName = actionParams.getData();
 		try{
 			
-			logger.info("Found image from" + folderName +" folder" );
+			System.out.println("Found image from" + folderName +" folder" );
 			
 			System.out.println();
 			Screen s = new Screen();
@@ -696,7 +696,7 @@ public abstract class ActionKeywords {
 			//s.click(path, imageNum);    
 		     TimeUnit.SECONDS.sleep(5);
 		} catch (Exception e){
-			logger.error("Not able to find any image from " + folderName + " folder");
+			System.out.println("Not able to find any image from " + folderName + " folder");
 			actionParams.getExtentTest().log(LogStatus.FAIL, "Unable to find image " );
 		}
 	}
@@ -705,10 +705,10 @@ public abstract class ActionKeywords {
 		int time = Integer.parseInt(""+actionParams.getData());
 		ExtentTest extentTest = actionParams.getExtentTest();
 		try{
-			logger.info("Waiting for "+ time + " seconds" );	
+			System.out.println("Waiting for "+ time + " seconds" );	
 			TimeUnit.SECONDS.sleep(time);
 		} catch (Exception e){
-			logger.error("Unable to wait");
+			System.out.println("Unable to wait");
 			extentTest.log(LogStatus.FAIL, "Not able to wait");
 		}
 	}
@@ -717,7 +717,7 @@ public abstract class ActionKeywords {
 	public void waitForImage(ActionParams actionParams){
 		String[] image = actionParams.getData().split(",",2);
 		try{
-			logger.info("Clicking on " + image[0]);
+			System.out.println("Clicking on " + image[0]);
 			
 			System.out.println(image[0]+ "   "+ image[1]);
 			Screen s = new Screen();
@@ -728,7 +728,7 @@ public abstract class ActionKeywords {
 			
 	        TimeUnit.SECONDS.sleep(5);
 		} catch (Exception e){
-			logger.error("Not able to find the image "+ image[0]);
+			System.out.println("Not able to find the image "+ image[0]);
 			actionParams.getExtentTest().log(LogStatus.FAIL, "Unable to find image " 
 					+ image[0]);
 		}
@@ -737,7 +737,7 @@ public abstract class ActionKeywords {
 	public void typeOnImage(ActionParams actionParams){
 		String[] image = actionParams.getData().split(",",2);
 		try{
-			logger.info("Clicking on " + image[0]);
+			System.out.println("Clicking on " + image[0]);
 			
 			System.out.println(image[0]+ "   "+ image[1]);
 			Screen s = new Screen();
@@ -750,7 +750,7 @@ public abstract class ActionKeywords {
 			//s.type(null,,0);
 	        TimeUnit.SECONDS.sleep(5);
 		} catch (Exception e){
-			logger.error("Not able to find the image "+ image[0]);
+			System.out.println("Not able to find the image "+ image[0]);
 			actionParams.getExtentTest().log(LogStatus.FAIL, "Unable to click image " 
 					+ image[0]);
 		}
@@ -775,7 +775,7 @@ public abstract class ActionKeywords {
 			prop.store(out,null);
 			out.close();
 		}catch (Exception e){
-			logger.error(e);
+			System.out.println(e);
 			actionParams.getExtentTest().log(LogStatus.FAIL, "Not able to save value of " 
 					+ pageObject);
 		}
@@ -804,7 +804,7 @@ public abstract class ActionKeywords {
 			prop.store(out,null);
 			out.close();
 		}catch (Exception e){
-			logger.error(e);
+			System.out.println(e);
 			actionParams.getExtentTest().log(LogStatus.FAIL, "Not able to save dollar value of " 
 					+ pageObject);
 		}
@@ -825,16 +825,16 @@ public abstract class ActionKeywords {
 			Properties prop = new Properties();
 			prop.load(in);
 			if(s.equals(prop.getProperty(data))){
-				logger.info(data + " is " + s);
+				System.out.println(data + " is " + s);
 				extentTest.log(LogStatus.PASS, "Validated " +data +"value on" + pageObject 
 						+ extentTest.addScreenCapture(CreateScreenshot(driver)));
 			} else {
-				logger.error(data + " is not correct value");
+				System.out.println(data + " is not correct value");
 				extentTest.log(LogStatus.FAIL, "Validated " +data +"value on" + pageObject 
 						+ extentTest.addScreenCapture(CreateScreenshot(driver)));
 			}
 		}catch (Exception e){
-			logger.error(e);
+			System.out.println(e);
 			actionParams.getExtentTest().log(LogStatus.FAIL, "Not able to validate value of " 
 					+ pageObject);
 		}
@@ -902,17 +902,17 @@ public abstract class ActionKeywords {
 			}
 			
 			if(currentValue == expectedValue){
-				logger.info(data + " is " + s);
+				System.out.println(data + " is " + s);
 				extentTest.log(LogStatus.PASS, "Validated " +data +" value on" + pageObject 
 					+" is "	+ s + extentTest.addScreenCapture(CreateScreenshot(driver)));
 			} else {
-				logger.error(data + " is not correct value");
+				System.out.println(data + " is not correct value");
 				extentTest.log(LogStatus.FAIL, "Validated " +data +" value on" + pageObject 
 						+" is "+ s + extentTest.addScreenCapture(CreateScreenshot(driver)));
 			}
 			
 		}catch (Exception e){
-			logger.error(e);
+			System.out.println(e);
 			actionParams.getExtentTest().log(LogStatus.FAIL, "Not able to validate dollar value of " 
 					+ pageObject);
 		}
@@ -946,7 +946,7 @@ public abstract class ActionKeywords {
 			// copy file object to designated location
 			FileUtils.copyFile(scrFile, new File(imageFileName));
 		} catch (IOException e) {
-			logger.error("Error while generating screenshot:\n" + e.toString());
+			System.out.println("Error while generating screenshot:\n" + e.toString());
 		}
 		return imageFileName;
 	}
@@ -964,11 +964,11 @@ public abstract class ActionKeywords {
 		System.out.println("DROP DOWN IS ACTIVATED"); 
 		
 	
-			logger.info(actionParams.getData() + " is " + we.getText());
+			System.out.println(actionParams.getData() + " is " + we.getText());
 			extentTest.log(LogStatus.PASS, "Validated " + we.getText() +" value on" + actionParams.getPageObject()
 				+" is "	+ we.getText() + extentTest.addScreenCapture(CreateScreenshot(driver)));
 		} catch(Exception e) {
-			logger.error(actionParams.getData() + " is not correct value");
+			System.out.println(actionParams.getData() + " is not correct value");
 			extentTest.log(LogStatus.FAIL, "Validated " +actionParams.getData() +" value on" + actionParams.getPageObject()
 					+" is "+ actionParams.getData() + extentTest.addScreenCapture(CreateScreenshot(driver)));
 		}
@@ -978,7 +978,7 @@ public abstract class ActionKeywords {
 	public void ScreenShot(ActionParams actionParams){
 		ExtentTest extentTest = actionParams.getExtentTest();
 		WebDriver driver = actionParams.getDriver();
-		logger.info("Captured Result - Ending Test");
+		System.out.println("Captured Result - Ending Test");
 		extentTest.log(LogStatus.PASS, "Validated  (test) "+ extentTest.addScreenCapture(CreateScreenshot(driver)));
 		
 	}

@@ -135,7 +135,6 @@ public class ExcelTestData {
 						DoStep(fs, extentTest, testXML);
 					}
 				} else {
-					System.out.println("LOOK AT THIS: " + testCaseID + " " + runmode + " " + description);
 					DoStep(testStep, extentTest, testXML);
 				}
 			}
@@ -158,7 +157,7 @@ public class ExcelTestData {
 			prop.store(out,null);
 			out.close();
 		}catch (Exception e){
-			logger.error(e);
+			System.out.println(e);
 		}
 	}
 	// Used to get a hash map of all the test cases.
@@ -338,13 +337,12 @@ public class ExcelTestData {
 	 */
 	private void startTestCase(String testCaseName) {
 
-		logger.info("****************************************************************************************");
-		logger.info("****************************************************************************************");
-		logger.info("$$$$$$$$$$$$$$$$$$$$$                 " + testCaseName
+		System.out.println("****************************************************************************************");
+		System.out.println("****************************************************************************************");
+		System.out.println("$$$$$$$$$$$$$$$$$$$$$                 " + testCaseName
 				+ "       $$$$$$$$$$$$$$$$$$$$$$$$$");
-		logger.info("****************************************************************************************");
-		logger.info("****************************************************************************************");
-
+		System.out.println("****************************************************************************************");
+		System.out.println("****************************************************************************************");
 	}
 
 	/**
@@ -357,11 +355,10 @@ public class ExcelTestData {
 		for (WebDriver driver : drivers) {
 			if (((RemoteWebDriver)driver).getSessionId() != null) {
 				try {
-					logger.info("Disposing WebDriver");
-					
+					System.out.println("Disposing WebDriver");					
 					driver.quit();
 				} catch (Exception e) {
-					logger.error(e.getMessage());
+					System.out.println(e.getMessage());
 					// try catch for FireFox
 				}
 			}
