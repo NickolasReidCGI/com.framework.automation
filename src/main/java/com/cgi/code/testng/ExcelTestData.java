@@ -24,8 +24,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.DataProvider;
 
-import com.cgi.code.xml.IXMLParam;
-import com.cgi.code.xml.TestAccess;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -125,9 +123,7 @@ public class ExcelTestData {
 			startTestCase(testCaseID);
 			
 			List<ExcelTestParams> testSteps = testCaseMap.get(testCaseID);
-			TestAccess xml = new TestAccess();
 			List<IXMLParam> testXML = null;
-			testXML = xml.XmlFactor(testCaseXML);
 			for (ExcelTestParams testStep : testSteps) {
 				if (testStep.getAction().toLowerCase().equals("function")) {
 					List<ExcelTestParams> funcSteps = functionMap.get(testStep.getData());
@@ -337,6 +333,7 @@ public class ExcelTestData {
 	 */
 	private void startTestCase(String testCaseName) {
 
+		
 		System.out.println("****************************************************************************************");
 		System.out.println("****************************************************************************************");
 		System.out.println("$$$$$$$$$$$$$$$$$$$$$                 " + testCaseName

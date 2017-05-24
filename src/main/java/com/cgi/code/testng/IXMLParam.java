@@ -1,4 +1,4 @@
-package com.cgi.code.xml;
+package com.cgi.code.testng;
 
 import org.openqa.selenium.By;
 /**

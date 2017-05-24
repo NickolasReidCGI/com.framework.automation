@@ -43,7 +43,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Match;
 import org.sikuli.script.Screen;
 
-import com.cgi.code.xml.IXMLParam;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 /**
