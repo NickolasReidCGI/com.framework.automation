@@ -426,7 +426,7 @@ public abstract class ActionKeywords {
 		actionParams.getTestCaseXMLData();
 		try {
 			System.out.println("Clicking on Webelement " + pageObject);
-			WebDriverWait wait = new WebDriverWait(driver, 100);
+			WebDriverWait wait = new WebDriverWait(driver, Integer.parseInt(actionParams.getData()));
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath(pageObject)));
 			actionParams.getExtentTest().log(LogStatus.PASS, "Found element " + pageObject);
 		} catch (Exception e) {
@@ -613,7 +613,6 @@ public abstract class ActionKeywords {
 	        for(int i = 0;matches.hasNext() && (i <= imageNum) ;i++){
 	        	System.out.println(i);
 	        	if(i == imageNum){
-	        		//System.out.println("ImageFound");
 	        		s.click(matches.next());
 	        		System.out.println(image[0] + " Image is displayed");
 	        		extentTest.log(LogStatus.PASS, "Image " + image[0] + " found " + 
@@ -622,7 +621,7 @@ public abstract class ActionKeywords {
 	        		System.out.println(matches.next());
 	        	}
 	        }
-	        //s.click(path, imageNum);    
+   
 	        TimeUnit.SECONDS.sleep(5);
 		} catch (Exception e){
 			System.out.println("Not able to find the image "+ image[0]);

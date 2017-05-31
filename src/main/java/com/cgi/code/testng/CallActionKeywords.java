@@ -18,6 +18,8 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
+import javax.swing.JOptionPane;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -33,10 +35,12 @@ import com.relevantcodes.extentreports.NetworkMode;
  * This is the main entry point.
  * 
  */
-public class CallActionKeywords {
+public class CallActionKeywords  {
+
 	private static final Logger logger = Logger.getLogger(CallActionKeywords.class.getName());
 	private List<WebDriver> drivers;
 	private ExtentReports extent;
+	//Holds test case steps
 	private Map<String, List<ExcelTestParams>> testCaseMap;
 	private Map<String, List<ExcelTestParams>> functionMap;
 	private String propFileName = "temp/tempVariables.properties";
@@ -53,12 +57,23 @@ public class CallActionKeywords {
 	@DataProvider(name = "name")
 	public static Iterator<Object[]> TestData() {
 		Collection<Object[]> ret = new ArrayList<Object[]>();
+		double[] x = range();
+		
+		/*
+		 * This is where the application decides which test cases to run.
+		 */
 		Collection<Object[]> readExcel = new ReadExcel("Test Suite").getData();
 		for (Object[] testCase : readExcel) {
-			if (String.valueOf(testCase[2]).toLowerCase().equals("yes")) {
-				ret.add(testCase);
+
+			if(!String.valueOf(testCase[2]).equals("Runmode")){
+				if(Double.parseDouble((String)testCase[2]) >= x[0] && Double.parseDouble((String)testCase[2]) <= x[1]){
+						ret.add(testCase);
+				}
 			}
+
 		}
+		
+		
 		return ret.iterator();
 	}
 
@@ -75,6 +90,7 @@ public class CallActionKeywords {
 		System.setProperty("webdriver.firefox.bin","C:\\Program Files\\Mozilla Firefox\\firefox.exe");
 		drivers = new ArrayList<WebDriver>();
 		
+		// grab the test case data
 		testCaseMap = getTestCaseMap("Test Cases");
 		functionMap = getTestCaseMap("Function");
 		Date date = new Date();
@@ -117,11 +133,12 @@ public class CallActionKeywords {
 	 */
 	@Test(dataProvider = "name")
 	public void DoTest(String testCaseXML, String testCaseID, String runmode, String description) {
-		if (runmode.toLowerCase().equals("yes")) {
+	
 			// start the report for the current test
 			ExtentTest extentTest = extent.startTest(testCaseID);
 			startTestCase(testCaseID);
 			
+			//Grab the test steps
 			List<ExcelTestParams> testSteps = testCaseMap.get(testCaseID);
 			List<XMLParamInterface> testXML = null;
 			for (ExcelTestParams testStep : testSteps) {
@@ -136,7 +153,7 @@ public class CallActionKeywords {
 			}
 			closePropertyFile();
 			extent.endTest(extentTest);
-		}
+		
 	}
 	private void closePropertyFile(){
 		try{
@@ -148,7 +165,6 @@ public class CallActionKeywords {
 			for(Object k:keys){
 				prop.remove(k);
 			}
-			//prop.setProperty(data, s);
 			FileOutputStream out = new FileOutputStream(propFileName);
 			prop.store(out,null);
 			out.close();
@@ -173,6 +189,11 @@ public class CallActionKeywords {
 				testName = String.valueOf(testCase[0]);
 				testParams = new ArrayList<ExcelTestParams>();
 			}
+			
+			
+			/*
+			 * This is where the excel test case values are stored for testing.
+			 */
 			testParams.add(new ExcelTestParams(String.valueOf(testCase[i++]),
 					String.valueOf(testCase[i++]), 
 					String.valueOf(testCase[i++]), 
@@ -361,4 +382,32 @@ public class CallActionKeywords {
 			}
 		}
 	}
+	
+	public static double[] range(){
+		try{
+        String lowerbound = JOptionPane.showInputDialog("Please input lower bound");
+
+        String upperbound = JOptionPane.showInputDialog("Please input upper bound");
+        
+        double int1 = Integer.parseInt(lowerbound);
+        double int2 = Integer.parseInt(upperbound);
+        if(int1 > int2){
+        	JOptionPane.showMessageDialog(null, "Ensure the lower bound is smaller than the upper bound.");
+        	range();
+        }else{
+        	return new double[] {int1,int2};
+        }
+
+        }
+        catch(NumberFormatException nfe){
+        	JOptionPane.showMessageDialog(null, "Please only place numeric values");
+        	range();
+        }
+		return null;
+	
+    
+        
+	}
+
+
 }
