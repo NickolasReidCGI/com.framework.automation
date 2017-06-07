@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="53403" started-at="2017-05-31T15:50:09Z" finished-at="2017-05-31T15:51:02Z">
+  <suite name="Default suite" duration-ms="51807" started-at="2017-06-07T17:28:22Z" finished-at="2017-06-07T17:29:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="53403" started-at="2017-05-31T15:50:09Z" finished-at="2017-05-31T15:51:02Z">
+    <test name="Default test" duration-ms="51807" started-at="2017-06-07T17:28:22Z" finished-at="2017-06-07T17:29:14Z">
       <class name="com.cgi.code.testng.CallActionKeywords">
-        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:com.cgi.code.testng.CallActionKeywords@20322d26]" name="BeforeClass" is-config="true" duration-ms="1042" started-at="2017-05-31T12:50:09Z" finished-at="2017-05-31T12:50:10Z">
+        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="BeforeClass" is-config="true" duration-ms="5974" started-at="2017-06-07T14:28:22Z" finished-at="2017-06-07T14:28:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@20322d26]" name="DoTest" duration-ms="24179" started-at="2017-05-31T12:50:16Z" data-provider="name" finished-at="2017-05-31T12:50:40Z">
+        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="DoTest" duration-ms="39556" started-at="2017-06-07T14:28:34Z" data-provider="name" finished-at="2017-06-07T14:29:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Regression]]>
+                <![CDATA[REgression]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Validate Mortgage Page]]>
+                <![CDATA[Valiadate Amazon - Empty Cart]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[4.0]]>
+                <![CDATA[8.0]]>
               </value>
             </param>
             <param index="3">
@@ -37,33 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoTest -->
-        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@20322d26]" name="DoTest" duration-ms="21356" started-at="2017-05-31T12:50:40Z" data-provider="name" finished-at="2017-05-31T12:51:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Regression]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Validate Mortgage Page]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[5.0]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[ ]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DoTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.cgi.code.testng.CallActionKeywords@20322d26]" name="TearDown" is-config="true" duration-ms="246" started-at="2017-05-31T12:51:02Z" finished-at="2017-05-31T12:51:02Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="TearDown" is-config="true" duration-ms="438" started-at="2017-06-07T14:29:13Z" finished-at="2017-06-07T14:29:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

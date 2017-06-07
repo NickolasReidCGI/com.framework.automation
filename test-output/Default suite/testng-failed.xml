@@ -7,7 +7,7 @@
         <methods>
           <include name="BeforeClass"/>
           <include name="TearDown"/>
-          <include name="DoTest"/>
+          <include name="DoTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.cgi.code.testng.CallActionKeywords -->
     </classes>
