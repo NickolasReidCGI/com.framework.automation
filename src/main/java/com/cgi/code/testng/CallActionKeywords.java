@@ -384,9 +384,9 @@ public class CallActionKeywords  {
 	
 	public static double[] range(){
 		try{
-        String lowerbound = JOptionPane.showInputDialog("Please input lower bound");
+        String lowerbound = JOptionPane.showInputDialog("Execute From: ");
 
-        String upperbound = JOptionPane.showInputDialog("Please input upper bound");
+        String upperbound = JOptionPane.showInputDialog("Execute To: ");
         
         double int1 = Integer.parseInt(lowerbound);
         double int2 = Integer.parseInt(upperbound);

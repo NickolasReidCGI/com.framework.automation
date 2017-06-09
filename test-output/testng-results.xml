@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="10" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="232267" started-at="2017-06-08T18:54:02Z" finished-at="2017-06-08T18:57:55Z">
+  <suite name="Default suite" duration-ms="238866" started-at="2017-06-08T19:31:04Z" finished-at="2017-06-08T19:35:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="232267" started-at="2017-06-08T18:54:02Z" finished-at="2017-06-08T18:57:55Z">
+    <test name="Default test" duration-ms="238866" started-at="2017-06-08T19:31:04Z" finished-at="2017-06-08T19:35:03Z">
       <class name="com.cgi.code.testng.CallActionKeywords">
-        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="BeforeClass" is-config="true" duration-ms="1427" started-at="2017-06-08T15:54:02Z" finished-at="2017-06-08T15:54:04Z">
+        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:com.cgi.code.testng.CallActionKeywords@1bb5a082]" name="BeforeClass" is-config="true" duration-ms="1311" started-at="2017-06-08T16:31:04Z" finished-at="2017-06-08T16:31:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="DoTest" duration-ms="15434" started-at="2017-06-08T15:54:22Z" data-provider="name" finished-at="2017-06-08T15:54:37Z">
+        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@1bb5a082]" name="DoTest" duration-ms="19771" started-at="2017-06-08T16:31:26Z" data-provider="name" finished-at="2017-06-08T16:31:45Z">
           <params>
             <param index="0">
               <value>
@@ -20,7 +20,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Validate Mortgage Page]]>
+                <![CDATA[Validate Mortgage Fixed Rate]]>
               </value>
             </param>
             <param index="2">
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoTest -->
-        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="DoTest" duration-ms="31786" started-at="2017-06-08T15:54:37Z" data-provider="name" finished-at="2017-06-08T15:55:09Z">
+        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@1bb5a082]" name="DoTest" duration-ms="32766" started-at="2017-06-08T16:31:45Z" data-provider="name" finished-at="2017-06-08T16:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoTest -->
-        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="DoTest" duration-ms="54021" started-at="2017-06-08T15:55:09Z" data-provider="name" finished-at="2017-06-08T15:56:03Z">
+        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@1bb5a082]" name="DoTest" duration-ms="55134" started-at="2017-06-08T16:32:18Z" data-provider="name" finished-at="2017-06-08T16:33:13Z">
           <params>
             <param index="0">
               <value>
@@ -89,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoTest -->
-        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="DoTest" duration-ms="37035" started-at="2017-06-08T15:56:03Z" data-provider="name" finished-at="2017-06-08T15:56:40Z">
+        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@1bb5a082]" name="DoTest" duration-ms="33813" started-at="2017-06-08T16:33:13Z" data-provider="name" finished-at="2017-06-08T16:33:47Z">
           <params>
             <param index="0">
               <value>
@@ -115,7 +115,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoTest -->
-        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="DoTest" duration-ms="9290" started-at="2017-06-08T15:56:40Z" data-provider="name" finished-at="2017-06-08T15:56:50Z">
+        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@1bb5a082]" name="DoTest" duration-ms="9761" started-at="2017-06-08T16:33:47Z" data-provider="name" finished-at="2017-06-08T16:33:57Z">
           <params>
             <param index="0">
               <value>
@@ -141,7 +141,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoTest -->
-        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="DoTest" duration-ms="10154" started-at="2017-06-08T15:56:50Z" data-provider="name" finished-at="2017-06-08T15:57:00Z">
+        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@1bb5a082]" name="DoTest" duration-ms="11276" started-at="2017-06-08T16:33:57Z" data-provider="name" finished-at="2017-06-08T16:34:08Z">
           <params>
             <param index="0">
               <value>
@@ -167,7 +167,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoTest -->
-        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="DoTest" duration-ms="14528" started-at="2017-06-08T15:57:00Z" data-provider="name" finished-at="2017-06-08T15:57:14Z">
+        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@1bb5a082]" name="DoTest" duration-ms="13842" started-at="2017-06-08T16:34:08Z" data-provider="name" finished-at="2017-06-08T16:34:22Z">
           <params>
             <param index="0">
               <value>
@@ -193,7 +193,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoTest -->
-        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="DoTest" duration-ms="14278" started-at="2017-06-08T15:57:14Z" data-provider="name" finished-at="2017-06-08T15:57:29Z">
+        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@1bb5a082]" name="DoTest" duration-ms="13616" started-at="2017-06-08T16:34:22Z" data-provider="name" finished-at="2017-06-08T16:34:36Z">
           <params>
             <param index="0">
               <value>
@@ -219,7 +219,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoTest -->
-        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="DoTest" duration-ms="13755" started-at="2017-06-08T15:57:29Z" data-provider="name" finished-at="2017-06-08T15:57:42Z">
+        <test-method status="PASS" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@1bb5a082]" name="DoTest" duration-ms="14269" started-at="2017-06-08T16:34:36Z" data-provider="name" finished-at="2017-06-08T16:34:50Z">
           <params>
             <param index="0">
               <value>
@@ -245,7 +245,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoTest -->
-        <test-method status="FAIL" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="DoTest" duration-ms="11970" started-at="2017-06-08T15:57:42Z" data-provider="name" finished-at="2017-06-08T15:57:54Z">
+        <test-method status="FAIL" signature="DoTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cgi.code.testng.CallActionKeywords@1bb5a082]" name="DoTest" duration-ms="12672" started-at="2017-06-08T16:34:50Z" data-provider="name" finished-at="2017-06-08T16:35:03Z">
           <params>
             <param index="0">
               <value>
@@ -311,7 +311,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.cgi.code.testng.CallActionKeywords@6737fd8f]" name="TearDown" is-config="true" duration-ms="426" started-at="2017-06-08T15:57:54Z" finished-at="2017-06-08T15:57:55Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.cgi.code.testng.CallActionKeywords@1bb5a082]" name="TearDown" is-config="true" duration-ms="404" started-at="2017-06-08T16:35:03Z" finished-at="2017-06-08T16:35:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
