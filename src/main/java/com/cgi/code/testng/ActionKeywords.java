@@ -988,4 +988,25 @@ public abstract class ActionKeywords {
 		return "";
 	}
 	
-}
+	public void SimpleLanguageCheck(ActionParams actionParams){
+		ExtentTest extentTest = actionParams.getExtentTest();
+		WebDriver driver = actionParams.getDriver();
+		
+		try{
+			String value = driver.findElement(By.tagName("HTML")).getAttribute("lang");
+		if(value.equals(actionParams.getData())){
+			System.out.println("Language IS english");
+		extentTest.log(LogStatus.PASS, "Validated  LANGUAGE "+ extentTest.addScreenCapture(CreateScreenshot(driver)));
+		}else{
+			//extentTest.log(LogStatus.FAIL, "Validated  LANGUAGE "+ extentTest.addScreenCapture(CreateScreenshot(driver)));
+			System.out.println("Language IS NOT english");
+		}}catch(Exception e){
+			//extentTest.log(LogStatus.FAIL, "Validated  LANGUAGE "+ extentTest.addScreenCapture(CreateScreenshot(driver)));
+			System.out.println("Language something went wrong");
+		}
+	}
+		
+
+	}
+	
+
